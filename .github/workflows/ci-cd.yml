@@ -31,7 +31,7 @@ jobs:
         id: meta_web
         uses: docker/metadata-action@v5
         with:
-          images: ${{ secrets.DOCKERHUB_USERNAME }}/bervinov-showcase-web
+          images: ${{ secrets.DOCKERHUB_USERNAME }}/bervinov-portfolio-web
           tags: |
             type=raw,value=latest,enable={{is_default_branch}}
             type=semver,pattern={{version}}
@@ -41,7 +41,7 @@ jobs:
         id: meta_api
         uses: docker/metadata-action@v5
         with:
-          images: ${{ secrets.DOCKERHUB_USERNAME }}/bervinov-showcase-api
+          images: ${{ secrets.DOCKERHUB_USERNAME }}/bervinov-portfolio-api
           tags: |
             type=raw,value=latest,enable={{is_default_branch}}
             type=semver,pattern={{version}}
@@ -80,4 +80,4 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: /opt/bervinov_showcase/restart.sh
+          script: /opt/bervinov-portfolio/restart.sh

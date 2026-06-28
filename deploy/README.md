@@ -1,16 +1,16 @@
-# Деплой Bervinov Showcase на сервер
+# Деплой Bervinov Portfolio на сервер
 
-Showcase — **портфолио + 5 демо-сайтов + API заявок (SQLite)**.  
+Showcase — **портфолио + 5 демо-сайтов + API заявок (SQLite)**.
 Bervinov Academy деплоится **отдельно** из своего репозитория.
 
 ---
 
 ## Что лежит на сервере
 
-Только папка `/opt/bervinov_showcase/`:
+Только папка `/opt/bervinov-portfolio/`:
 
 ```
-/opt/bervinov_showcase/
+/opt/bervinov-portfolio/
 ├── docker-compose.yml    ← из deploy/docker-compose.yml
 ├── .env                  ← из deploy/.env.example (заполнить!)
 ├── restart.sh
@@ -48,18 +48,18 @@ certbot --nginx \
 ### 3. Скопировать файлы на сервер
 
 ```bash
-ssh root@YOUR_SERVER 'mkdir -p /opt/bervinov_showcase'
+ssh root@YOUR_SERVER 'mkdir -p /opt/bervinov-portfolio'
 
-scp deploy/docker-compose.yml root@YOUR_SERVER:/opt/bervinov_showcase/
-scp deploy/.env.example root@YOUR_SERVER:/opt/bervinov_showcase/.env
-scp deploy/restart.sh deploy/full-restart.sh root@YOUR_SERVER:/opt/bervinov_showcase/
-ssh root@YOUR_SERVER 'chmod +x /opt/bervinov_showcase/*.sh'
+scp deploy/docker-compose.yml root@YOUR_SERVER:/opt/bervinov-portfolio/
+scp deploy/.env.example root@YOUR_SERVER:/opt/bervinov-portfolio/.env
+scp deploy/restart.sh deploy/full-restart.sh root@YOUR_SERVER:/opt/bervinov-portfolio/
+ssh root@YOUR_SERVER 'chmod +x /opt/bervinov-portfolio/*.sh'
 ```
 
 ### 4. Заполнить `.env`
 
 ```bash
-ssh root@YOUR_SERVER 'nano /opt/bervinov_showcase/.env'
+ssh root@YOUR_SERVER 'nano /opt/bervinov-portfolio/.env'
 ```
 
 Обязательно смените `ADMIN_API_KEY` на длинную случайную строку.
@@ -78,7 +78,7 @@ nginx -t && systemctl reload nginx
 ### 6. Запуск
 
 ```bash
-ssh root@YOUR_SERVER '/opt/bervinov_showcase/restart.sh'
+ssh root@YOUR_SERVER '/opt/bervinov-portfolio/restart.sh'
 ```
 
 ---
@@ -88,7 +88,7 @@ ssh root@YOUR_SERVER '/opt/bervinov_showcase/restart.sh'
 GitHub Actions пушит образы в Docker Hub. На сервере:
 
 ```bash
-/opt/bervinov_showcase/restart.sh
+/opt/bervinov-portfolio/restart.sh
 ```
 
 ---

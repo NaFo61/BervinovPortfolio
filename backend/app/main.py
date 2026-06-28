@@ -9,7 +9,7 @@ from .config import settings
 from .database import init_db, insert_lead, list_leads
 
 logging.basicConfig(level=settings.log_level)
-logger = logging.getLogger("bervinov-showcase-api")
+logger = logging.getLogger("bervinov-portfolio-api")
 
 ALLOWED_SITES = {
     "portfolio",
@@ -27,7 +27,7 @@ class LeadCreate(BaseModel):
     payload: dict[str, Any] = Field(default_factory=dict)
 
 
-app = FastAPI(title="Bervinov Showcase API", version="1.0.0")
+app = FastAPI(title="Bervinov Portfolio API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,

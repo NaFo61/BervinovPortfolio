@@ -3,7 +3,7 @@
 #   scripts/build-sites.sh    (Linux/macOS)
 #   docker compose up --build
 
-name: bervinov_showcase
+name: bervinov-portfolio
 
 services:
   api:

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Перезапуск showcase на сервере (SQLite volume сохраняется).
-# Запуск: /opt/bervinov_showcase/restart.sh
+# Перезапуск portfolio на сервере (SQLite volume сохраняется).
+# Запуск: /opt/bervinov-portfolio/restart.sh
 set -euo pipefail
 
 RED='\033[0;31m'
@@ -35,7 +35,7 @@ wait_for_health() {
 }
 
 echo "========================================"
-echo "  Перезапуск Bervinov Showcase"
+echo "  Перезапуск Bervinov Portfolio"
 echo "========================================"
 echo
 

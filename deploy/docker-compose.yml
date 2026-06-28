@@ -4,11 +4,11 @@
 #   ./restart.sh           — pull + up, БД сохраняется
 #   ./full-restart.sh      — сброс volume с заявками (осторожно)
 
-name: bervinov_showcase
+name: bervinov-portfolio
 
 services:
   api:
-    image: ${DOCKERHUB_USER}/bervinov-showcase-api:${IMAGE_TAG:-latest}
+    image: ${DOCKERHUB_USER}/bervinov-portfolio-api:${IMAGE_TAG:-latest}
     pull_policy: always
     restart: unless-stopped
     env_file: .env
@@ -24,7 +24,7 @@ services:
       - internal
 
   web:
-    image: ${DOCKERHUB_USER}/bervinov-showcase-web:${IMAGE_TAG:-latest}
+    image: ${DOCKERHUB_USER}/bervinov-portfolio-web:${IMAGE_TAG:-latest}
     pull_policy: always
     restart: unless-stopped
     ports:

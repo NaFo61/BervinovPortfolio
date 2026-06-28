@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Полный сброс showcase: удаление volume с заявками (SQLite).
-# Запуск: /opt/bervinov_showcase/full-restart.sh
+# Полный сброс portfolio: удаление volume с заявками (SQLite).
+# Запуск: /opt/bervinov-portfolio/full-restart.sh
 set -euo pipefail
 
 RED='\033[0;31m'
@@ -38,7 +38,7 @@ docker compose up -d --remove-orphans
 
 for i in 1 2 3 4 5 6 7 8 9 10; do
   if curl -fsS "http://127.0.0.1:18000/health" >/dev/null; then
-    print_success "Showcase поднят с чистой БД"
+    print_success "Portfolio поднят с чистой БД"
     docker compose ps
     exit 0
   fi
