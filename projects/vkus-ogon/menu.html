@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Меню — Vкус&Огонь</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a href="index.html" class="logo"><span class="logo__mark">V</span> Vкус&Огонь</a>
+    <nav class="nav__links"><a href="index.html">Главная</a><a href="menu.html" class="is-active">Меню</a><a href="about.html">О нас</a><a href="booking.html">Бронь</a><a href="contacts.html">Контакты</a></nav>
+    <a href="booking.html" class="btn btn--fire">Бронь стола</a>
+    <button class="nav__burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </header>
+  <nav class="nav__mobile"><a href="index.html">Главная</a><a href="menu.html">Меню</a><a href="about.html">О нас</a><a href="booking.html">Бронь</a><a href="contacts.html">Контакты</a></nav>
+
+  <div class="page-hero"><div class="container">
+    <div class="breadcrumb"><a href="index.html">Главная</a> / Меню</div>
+    <h1>Меню</h1><p>Стейки, гриль, закуски и авторские соусы — всё готовится на открытом огне</p>
+  </div></div>
+
+  <section><div class="container">
+    <div class="menu-tabs">
+      <button class="menu-tab is-active" data-target="">Всё меню</button>
+      <button class="menu-tab" data-target="grill">Гриль</button>
+      <button class="menu-tab" data-target="starters">Закуски</button>
+      <button class="menu-tab" data-target="drinks">Напитки</button>
+    </div>
+
+    <div class="menu-section" id="grill" data-reveal>
+      <h2>🔥 Гриль и стейки</h2>
+      <div class="menu-list">
+        <div class="menu-row"><div><h3>Рибай 300г</h3><p>Мраморная говядина, розмарин, чесночное масло · степень прожарки на выбор</p></div><span class="menu-row__price">2 490 ₽</span></div>
+        <div class="menu-row"><div><h3>Стриплoin 250г</h3><p>Классический стейк из поясничного отруба, соль морская, перец</p></div><span class="menu-row__price">1 990 ₽</span></div>
+        <div class="menu-row"><div><h3>BBQ Ribs</h3><p>12 часов в маринаде, глазурь chipotle, coleslaw</p></div><span class="menu-row__price">1 890 ₽</span></div>
+        <div class="menu-row"><div><h3>Tomahawk 1.2кг</h3><p>На двоих, подаётся с овощами гриль и соусом chimichurri</p></div><span class="menu-row__price">5 900 ₽</span></div>
+      </div>
+    </div>
+
+    <div class="menu-section" id="starters" data-reveal>
+      <h2>🥗 Закуски и бургеры</h2>
+      <div class="menu-list">
+        <div class="menu-row"><div><h3>Fire Burger</h3><p>Двойная котлета, cheddar, карамельный лук, соус BBQ</p></div><span class="menu-row__price">890 ₽</span></div>
+        <div class="menu-row"><div><h3>Картофель по-деревенски</h3><p>С паприкой и чесночным aioli</p></div><span class="menu-row__price">420 ₽</span></div>
+        <div class="menu-row"><div><h3>Брускетта с ростбифом</h3><p>Томаты, руккола, бальзамик</p></div><span class="menu-row__price">650 ₽</span></div>
+      </div>
+    </div>
+
+    <div class="menu-section" id="drinks" data-reveal>
+      <h2>🍷 Напитки</h2>
+      <div class="menu-list">
+        <div class="menu-row"><div><h3>Домашний лимонад</h3><p>Мята, лайм, имбирь</p></div><span class="menu-row__price">350 ₽</span></div>
+        <div class="menu-row"><div><h3>Кraft IPA</h3><p>0.5л, локальная пивоварня</p></div><span class="menu-row__price">490 ₽</span></div>
+        <div class="menu-row"><div><h3>Malbec Reserva</h3><p>Бокал, Аргентина — идеально к стейку</p></div><span class="menu-row__price">690 ₽</span></div>
+      </div>
+    </div>
+  </div></section>
+
+  <footer class="footer"><div class="container"><div class="footer__bottom" style="border:none;padding:0"><span>© 2026 Vкус&Огонь</span><a href="booking.html" class="btn btn--fire btn--sm">Забронировать стол</a></div></div></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

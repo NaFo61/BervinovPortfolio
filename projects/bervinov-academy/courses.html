@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Программа курсов BervinovAcademy — HTML, CSS, React, UI/UX и фриланс. 32 урока с практикой." />
+  <title>Курсы — BervinovAcademy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient__grid"></div>
+    <div class="ambient__mesh"></div>
+  </div>
+
+  <div class="wrap">
+    <header class="nav">
+      <a href="index.html" class="logo">Bervinov<span>Academy</span></a>
+      <nav class="nav__links" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="courses.html">Курсы</a>
+        <a href="pricing.html">Тарифы</a>
+        <a href="about.html">О школе</a>
+        <a href="cabinet.html">Кабинет</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="cabinet.html" class="btn btn--ghost">Войти</a>
+        <a href="pricing.html" class="btn btn--mint btn--mint--pulse nav__cta">Начать обучение</a>
+        <button class="nav__burger" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+      </div>
+      <nav class="nav__mobile" aria-label="Мобильная навигация">
+        <a href="index.html">Главная</a>
+        <a href="courses.html">Курсы</a>
+        <a href="pricing.html">Тарифы</a>
+        <a href="about.html">О школе</a>
+        <a href="cabinet.html">Кабинет</a>
+        <a href="pricing.html" class="btn btn--mint">Начать обучение</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero" data-reveal>
+        <div class="eyebrow eyebrow--line">Программа обучения</div>
+        <h1 class="page-title">32 урока — от <em class="title-accent">HTML</em> до первого клиента</h1>
+        <p class="lead">Три модуля, каждый с домашними заданиями, чек-листами и финальным проектом. Проходите в своём темпе или следуйте расписанию потока.</p>
+      </section>
+
+      <section style="padding-top:0">
+        <!-- Module 1 -->
+        <article class="course-module" data-reveal>
+          <div class="course-module__head">
+            <div>
+              <div class="course-module__num">МОДУЛЬ 01</div>
+              <h3>HTML &amp; CSS — фундамент вёрстки</h3>
+              <p>Освоите семантику, Flexbox, Grid, адаптив и CSS-анимации. Соберёте три полноценных лендинга.</p>
+            </div>
+            <span class="course-module__badge">4 недели · 12 уроков</span>
+          </div>
+          <div class="course-module__body">
+            <div class="course-module__lessons">
+              <h4>Уроки модуля</h4>
+              <ul class="lesson-list">
+                <li><span class="lesson-list__icon">01</span> Введение в веб и инструменты разработчика</li>
+                <li><span class="lesson-list__icon">02</span> HTML: семантика, формы, доступность</li>
+                <li><span class="lesson-list__icon">03</span> CSS: каскад, переменные, типографика</li>
+                <li><span class="lesson-list__icon">04</span> Flexbox — раскладки без боли</li>
+                <li><span class="lesson-list__icon">05</span> CSS Grid — сложные сетки</li>
+                <li><span class="lesson-list__icon">06</span> Адаптив: mobile-first, breakpoints</li>
+                <li><span class="lesson-list__icon">07</span> Анимации и transitions</li>
+                <li><span class="lesson-list__icon">08</span> Проект: лендинг #1 (dark neon)</li>
+                <li><span class="lesson-list__icon">09</span> Проект: лендинг #2 (e-commerce)</li>
+                <li><span class="lesson-list__icon">10</span> Проект: лендинг #3 (portfolio)</li>
+                <li><span class="lesson-list__icon">11</span> Git, деплой на GitHub Pages</li>
+                <li><span class="lesson-list__icon">12</span> Ревью и финальная домашка модуля</li>
+              </ul>
+            </div>
+            <div class="course-module__skills">
+              <h4>Навыки после модуля</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">Flexbox</span>
+                <span class="skill-tag">CSS Grid</span>
+                <span class="skill-tag">Адаптив</span>
+                <span class="skill-tag">Анимации</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Figma → код</span>
+              </div>
+              <p style="margin-top:20px;font-size:14px;color:var(--muted)">6 домашних заданий · 3 проекта в портфолио · ~20 часов видео</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Module 2 -->
+        <article class="course-module" data-reveal>
+          <div class="course-module__head">
+            <div>
+              <div class="course-module__num">МОДУЛЬ 02</div>
+              <h3>React &amp; UI — интерактив и design system</h3>
+              <p>Компонентный подход, хуки, роутинг. Создадите портфолио на React с mint design system.</p>
+            </div>
+            <span class="course-module__badge">4 недели · 14 уроков</span>
+          </div>
+          <div class="course-module__body">
+            <div class="course-module__lessons">
+              <h4>Уроки модуля</h4>
+              <ul class="lesson-list">
+                <li><span class="lesson-list__icon">01</span> JavaScript ES6+ для React</li>
+                <li><span class="lesson-list__icon">02</span> Введение в React и JSX</li>
+                <li><span class="lesson-list__icon">03</span> Props, state, компоненты</li>
+                <li><span class="lesson-list__icon">04</span> Хуки: useState, useEffect</li>
+                <li><span class="lesson-list__icon">05</span> Списки, формы, controlled inputs</li>
+                <li><span class="lesson-list__icon">06</span> Custom hooks и переиспользование</li>
+                <li><span class="lesson-list__icon">07</span> React Router — многостраничность</li>
+                <li><span class="lesson-list__icon">08</span> Design tokens и CSS-переменные</li>
+                <li><span class="lesson-list__icon">09</span> UI Kit: Button, Card, Input</li>
+                <li><span class="lesson-list__icon">10</span> Анимации в React (Framer Motion)</li>
+                <li><span class="lesson-list__icon">11</span> Fetch API и работа с данными</li>
+                <li><span class="lesson-list__icon">12</span> Проект: портфолио на React</li>
+                <li><span class="lesson-list__icon">13</span> Оптимизация и деплой (Vercel)</li>
+                <li><span class="lesson-list__icon">14</span> Ревью и финальная домашка модуля</li>
+              </ul>
+            </div>
+            <div class="course-module__skills">
+              <h4>Навыки после модуля</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">JavaScript ES6+</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">JSX</span>
+                <span class="skill-tag">Hooks</span>
+                <span class="skill-tag">React Router</span>
+                <span class="skill-tag">Design System</span>
+                <span class="skill-tag">Framer Motion</span>
+                <span class="skill-tag">Vercel</span>
+              </div>
+              <p style="margin-top:20px;font-size:14px;color:var(--muted)">8 домашних заданий · 1 большой проект · ~24 часа видео</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Module 3 -->
+        <article class="course-module" data-reveal>
+          <div class="course-module__head">
+            <div>
+              <div class="course-module__num">МОДУЛЬ 03</div>
+              <h3>Фриланс — от навыков к деньгам</h3>
+              <p>Научитесь искать клиентов, оценивать проекты, вести переговоры и сдавать работу профессионально.</p>
+            </div>
+            <span class="course-module__badge">2 недели · 6 уроков</span>
+          </div>
+          <div class="course-module__body">
+            <div class="course-module__lessons">
+              <h4>Уроки модуля</h4>
+              <ul class="lesson-list">
+                <li><span class="lesson-list__icon">01</span> Портфолио, которое продаёт</li>
+                <li><span class="lesson-list__icon">02</span> Где искать первых клиентов</li>
+                <li><span class="lesson-list__icon">03</span> Бриф, ТЗ и оценка проекта</li>
+                <li><span class="lesson-list__icon">04</span> Ценообразование и договор</li>
+                <li><span class="lesson-list__icon">05</span> Коммуникация с заказчиком</li>
+                <li><span class="lesson-list__icon">06</span> Сдача проекта и получение оплаты</li>
+              </ul>
+            </div>
+            <div class="course-module__skills">
+              <h4>Навыки после модуля</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Портфолио</span>
+                <span class="skill-tag">Поиск клиентов</span>
+                <span class="skill-tag">Брифинг</span>
+                <span class="skill-tag">Оценка проектов</span>
+                <span class="skill-tag">Переговоры</span>
+                <span class="skill-tag">Договоры</span>
+                <span class="skill-tag">Telegram-продажи</span>
+              </div>
+              <p style="margin-top:20px;font-size:14px;color:var(--muted)">3 домашних задания · шаблоны документов · ~8 часов видео</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section data-reveal>
+        <div class="cta-band">
+          <h2>Вся программа — 8 недель интенсива</h2>
+          <p>32 урока, 17 домашних заданий, 4 проекта в портфолио и путь к первому клиенту</p>
+          <a href="pricing.html" class="btn btn--mint btn--mint--pulse">Выбрать тариф</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a href="index.html" class="logo">Bervinov<span>Academy</span></a>
+            <p>Онлайн-школа вёрстки и фронтенда. Практика, ревью кода и путь к первому клиенту.</p>
+          </div>
+          <div class="footer__col">
+            <h4>Навигация</h4>
+            <a href="courses.html">Курсы</a>
+            <a href="pricing.html">Тарифы</a>
+            <a href="about.html">О школе</a>
+            <a href="cabinet.html">Личный кабинет</a>
+          </div>
+          <div class="footer__col">
+            <h4>Контакты</h4>
+            <a href="mailto:hello@bervinov.dev">hello@bervinov.dev</a>
+            <a href="https://t.me/bervinov" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
+          </div>
+          <div class="footer__social">
+            <a href="https://t.me/bervinov" target="_blank" rel="noopener" aria-label="Telegram">TG</a>
+            <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© 2026 BervinovAcademy. Все права защищены.</span>
+          <div class="footer__legal">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Оферта</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

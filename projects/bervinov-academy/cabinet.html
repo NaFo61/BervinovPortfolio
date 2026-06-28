@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Личный кабинет ученика BervinovAcademy — прогресс, уроки, домашние задания." />
+  <title>Личный кабинет — BervinovAcademy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient__grid"></div>
+    <div class="ambient__mesh"></div>
+  </div>
+
+  <div class="wrap">
+    <header class="nav">
+      <a href="index.html" class="logo">Bervinov<span>Academy</span></a>
+      <nav class="nav__links" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="courses.html">Курсы</a>
+        <a href="pricing.html">Тарифы</a>
+        <a href="about.html">О школе</a>
+        <a href="cabinet.html">Кабинет</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="cabinet.html" class="btn btn--ghost">Войти</a>
+        <a href="pricing.html" class="btn btn--mint btn--mint--pulse nav__cta">Начать обучение</a>
+        <button class="nav__burger" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+      </div>
+      <nav class="nav__mobile" aria-label="Мобильная навигация">
+        <a href="index.html">Главная</a>
+        <a href="courses.html">Курсы</a>
+        <a href="pricing.html">Тарифы</a>
+        <a href="about.html">О школе</a>
+        <a href="cabinet.html">Кабинет</a>
+        <a href="pricing.html" class="btn btn--mint">Начать обучение</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="dashboard">
+        <aside class="dashboard__sidebar" data-reveal>
+          <div class="dashboard__user">
+            <div class="dashboard__avatar">ДМ</div>
+            <div class="dashboard__user-info">
+              <b>Дарья Минина</b>
+              <span>Тариф «Профи» · Поток #13</span>
+            </div>
+          </div>
+          <nav class="dashboard__nav" aria-label="Меню кабинета">
+            <a href="#" class="is-active">Обзор</a>
+            <a href="#">Мои курсы</a>
+            <a href="#">Домашние задания</a>
+            <a href="#">Созвоны</a>
+            <a href="#">Сообщения</a>
+            <a href="#">Настройки</a>
+          </nav>
+        </aside>
+
+        <div class="dashboard__main">
+          <div class="demo-banner" data-reveal>
+            Демо-интерфейс личного кабинета · данные для примера, авторизация не требуется
+          </div>
+
+          <div class="dash-card" data-reveal>
+            <div class="dash-card__head">
+              <h2>Общий прогресс</h2>
+              <span class="dash-badge dash-badge--mint">Модуль 2 из 3</span>
+            </div>
+            <div class="progress-list">
+              <div class="progress-item">
+                <div class="progress-item__top">
+                  <span>Модуль 1 — HTML &amp; CSS</span>
+                  <span>100%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-bar__fill" style="width:100%"></div>
+                </div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-item__top">
+                  <span>Модуль 2 — React &amp; UI</span>
+                  <span>57%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-bar__fill" style="width:57%"></div>
+                </div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-item__top">
+                  <span>Модуль 3 — Фриланс</span>
+                  <span>0%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-bar__fill" style="width:0%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dash-grid-2">
+            <div class="dash-card" data-reveal>
+              <div class="dash-card__head">
+                <h2>Следующий урок</h2>
+                <span class="dash-badge dash-badge--mint">~18 мин</span>
+              </div>
+              <div class="next-lesson">
+                <div class="next-lesson__play" aria-hidden="true">▶</div>
+                <div class="next-lesson__info">
+                  <h3>Урок 08 — Design tokens и CSS-переменные</h3>
+                  <p>Модуль 2 · React &amp; UI · Урок 8 из 14</p>
+                </div>
+                <a href="#" class="btn btn--mint btn--sm">Смотреть</a>
+              </div>
+            </div>
+
+            <div class="dash-card" data-reveal>
+              <div class="dash-card__head">
+                <h2>Статистика</h2>
+              </div>
+              <div class="grid-2" style="gap:16px">
+                <div class="stat-card" style="padding:20px">
+                  <b>18</b>
+                  <span>уроков пройдено</span>
+                </div>
+                <div class="stat-card" style="padding:20px">
+                  <b>11</b>
+                  <span>домашек сдано</span>
+                </div>
+                <div class="stat-card" style="padding:20px">
+                  <b>42ч</b>
+                  <span>время обучения</span>
+                </div>
+                <div class="stat-card" style="padding:20px">
+                  <b>1</b>
+                  <span>созвон остался</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dash-card" data-reveal>
+            <div class="dash-card__head">
+              <h2>Домашние задания</h2>
+              <a href="#" class="btn btn--ghost btn--sm">Все задания</a>
+            </div>
+            <div class="homework-list">
+              <div class="homework-item">
+                <div>
+                  <div class="homework-item__title">ДЗ #11 — UI Kit: Button, Card, Input</div>
+                  <div class="homework-item__meta">Модуль 2 · Срок: 2 июля 2026</div>
+                </div>
+                <span class="dash-badge dash-badge--warn">На проверке</span>
+              </div>
+              <div class="homework-item">
+                <div>
+                  <div class="homework-item__title">ДЗ #10 — Custom hooks</div>
+                  <div class="homework-item__meta">Модуль 2 · Сдано 24 июня</div>
+                </div>
+                <span class="dash-badge dash-badge--ok">Принято</span>
+              </div>
+              <div class="homework-item">
+                <div>
+                  <div class="homework-item__title">ДЗ #09 — React Router</div>
+                  <div class="homework-item__meta">Модуль 2 · Сдано 20 июня</div>
+                </div>
+                <span class="dash-badge dash-badge--ok">Принято</span>
+              </div>
+              <div class="homework-item">
+                <div>
+                  <div class="homework-item__title">ДЗ #12 — Проект: портфолио на React</div>
+                  <div class="homework-item__meta">Модуль 2 · Откроется после урока 12</div>
+                </div>
+                <span class="dash-badge" style="background:var(--raised);color:var(--muted);border:1px solid var(--border)">Заблокировано</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="dash-grid-2">
+            <div class="dash-card" data-reveal>
+              <div class="dash-card__head">
+                <h2>Ближайший созвон</h2>
+              </div>
+              <div class="next-lesson" style="background:var(--card)">
+                <div class="next-lesson__info">
+                  <h3>Групповой Q&amp;A с ментором</h3>
+                  <p>5 июля 2026 · 19:00 МСК · Zoom</p>
+                </div>
+                <a href="#" class="btn btn--ghost btn--sm">В календарь</a>
+              </div>
+            </div>
+
+            <div class="dash-card" data-reveal>
+              <div class="dash-card__head">
+                <h2>Последняя активность</h2>
+              </div>
+              <ul class="activity-feed">
+                <li>
+                  <span class="activity-feed__dot"></span>
+                  <div>
+                    <div>Ментор оставил комментарий к ДЗ #11</div>
+                    <div class="activity-feed__time">2 часа назад</div>
+                  </div>
+                </li>
+                <li>
+                  <span class="activity-feed__dot"></span>
+                  <div>
+                    <div>Завершён урок «Custom hooks и переиспользование»</div>
+                    <div class="activity-feed__time">Вчера, 21:34</div>
+                  </div>
+                </li>
+                <li>
+                  <span class="activity-feed__dot"></span>
+                  <div>
+                    <div>ДЗ #10 принято — оценка 9/10</div>
+                    <div class="activity-feed__time">24 июня, 14:12</div>
+                  </div>
+                </li>
+                <li>
+                  <span class="activity-feed__dot"></span>
+                  <div>
+                    <div>Новое сообщение в чате потока #13</div>
+                    <div class="activity-feed__time">23 июня, 09:05</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a href="index.html" class="logo">Bervinov<span>Academy</span></a>
+            <p>Онлайн-школа вёрстки и фронтенда. Практика, ревью кода и путь к первому клиенту.</p>
+          </div>
+          <div class="footer__col">
+            <h4>Навигация</h4>
+            <a href="courses.html">Курсы</a>
+            <a href="pricing.html">Тарифы</a>
+            <a href="about.html">О школе</a>
+            <a href="cabinet.html">Личный кабинет</a>
+          </div>
+          <div class="footer__col">
+            <h4>Контакты</h4>
+            <a href="mailto:hello@bervinov.dev">hello@bervinov.dev</a>
+            <a href="https://t.me/bervinov" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
+          </div>
+          <div class="footer__social">
+            <a href="https://t.me/bervinov" target="_blank" rel="noopener" aria-label="Telegram">TG</a>
+            <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© 2026 BervinovAcademy. Все права защищены.</span>
+          <div class="footer__legal">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Оферта</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

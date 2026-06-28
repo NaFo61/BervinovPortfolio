@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Абонементы FitZone — START, PRO, ELITE. Сравнение тарифов, FAQ и онлайн-оплата." />
+  <title>Абонементы — FitZone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="nav">
+      <a href="index.html" class="logo">FIT<span>ZONE</span></a>
+      <nav class="nav__links" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="memberships.html">Абонементы</a>
+        <a href="schedule.html">Расписание</a>
+        <a href="trainers.html">Тренеры</a>
+        <a href="gallery.html">Галерея</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="memberships.html" class="btn btn--lime btn--lime--pulse nav__cta">Купить абонемент</a>
+        <button class="nav__burger" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="nav__mobile" aria-label="Мобильная навигация">
+        <a href="index.html">Главная</a>
+        <a href="memberships.html">Абонементы</a>
+        <a href="schedule.html">Расписание</a>
+        <a href="trainers.html">Тренеры</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="memberships.html" class="btn btn--lime">Купить абонемент</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero--page">
+        <div class="hero__bg" style="background-image: url('https://images.unsplash.com/photo-1571902947662-4463379f8fbf?w=1400&q=80');" aria-hidden="true"></div>
+        <div class="hero__scan" aria-hidden="true"></div>
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__tag">Тарифы · без скрытых платежей</div>
+            <h1 class="hero__title">АБОНЕМЕНТЫ</h1>
+            <p class="hero__sub">Выбери формат тренировок под свой ритм жизни. Заморозка до 30 дней, семейная скидка 15%, первый визит — бесплатно.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="plans" data-reveal-stagger>
+            <article class="plan">
+              <h3>START</h3>
+              <p class="plan__desc">Базовый доступ для регулярных тренировок в зале</p>
+              <div class="plan__price">3 900 ₽<small>/мес</small></div>
+              <p class="plan__period">3 510 ₽/мес при оплате за 3 месяца</p>
+              <ul>
+                <li>Зал 6:00–23:00</li>
+                <li>Раздевалка + душ + локер</li>
+                <li>1 гостевой визит в месяц</li>
+                <li>Фитнес-тестирование при вступлении</li>
+                <li>Мобильное приложение</li>
+                <li class="is-no">Групповые классы</li>
+                <li class="is-no">Сауна и SPA</li>
+                <li class="is-no">Круглосуточный доступ</li>
+              </ul>
+              <button class="btn btn--outline btn--block" data-pay="3900" data-plan="START">Оплатить</button>
+            </article>
+            <article class="plan plan--hot">
+              <span class="plan__badge">Хит продаж</span>
+              <h3>PRO</h3>
+              <p class="plan__desc">Полный доступ ко всем зонам и классам клуба</p>
+              <div class="plan__price">5 900 ₽<small>/мес</small></div>
+              <p class="plan__period">5 015 ₽/мес при оплате за 6 месяцев</p>
+              <ul>
+                <li>Круглосуточный доступ 24/7</li>
+                <li>Все групповые классы без лимита</li>
+                <li>Сауна + SPA + recovery-зона</li>
+                <li>2 PT-сессии в месяц (45 мин)</li>
+                <li>2 гостевых визита в месяц</li>
+                <li>Заморозка до 30 дней</li>
+                <li>Парковка (2 часа бесплатно)</li>
+                <li class="is-no">Персональный нутрициолог</li>
+              </ul>
+              <button class="btn btn--lime btn--block" data-pay="5900" data-plan="PRO">Оплатить</button>
+            </article>
+            <article class="plan">
+              <h3>ELITE</h3>
+              <p class="plan__desc">VIP-формат с персональным сопровождением</p>
+              <div class="plan__price">9 900 ₽<small>/мес</small></div>
+              <p class="plan__period">Индивидуальный менеджер + VIP-парковка</p>
+              <ul>
+                <li>Всё из PRO без ограничений</li>
+                <li>8 PT-сессий в месяц</li>
+                <li>План питания от нутрициолога</li>
+                <li>VIP-парковка без лимита</li>
+                <li>Приоритетная запись на классы</li>
+                <li>Доступ в закрытую ELITE-зону</li>
+                <li>Ежемесячный InBody-анализ</li>
+                <li>Неограниченные гостевые визиты</li>
+              </ul>
+              <button class="btn btn--outline btn--block" data-pay="9900" data-plan="ELITE">Оплатить</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section style="background: var(--card); border-top: 1px solid var(--border);">
+        <div class="container">
+          <div class="section-head section-head--center" data-reveal>
+            <div class="eyebrow">Сравнение</div>
+            <h2>ДЕТАЛЬНОЕ СРАВНЕНИЕ</h2>
+            <p>Все возможности тарифов в одной таблице — выбирай осознанно.</p>
+            <div class="section-head__line"></div>
+          </div>
+          <div class="compare-wrap" data-reveal>
+            <table class="compare">
+              <thead>
+                <tr>
+                  <th>Возможность</th>
+                  <th>START</th>
+                  <th class="is-hot">PRO</th>
+                  <th>ELITE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Доступ в зал</td><td>6:00–23:00</td><td>24/7</td><td>24/7 + ELITE-зона</td></tr>
+                <tr><td>Групповые классы</td><td class="cross">—</td><td class="check">✓</td><td class="check">✓ приоритет</td></tr>
+                <tr><td>PT-сессии</td><td class="cross">—</td><td>2 / мес</td><td>8 / мес</td></tr>
+                <tr><td>Сауна и SPA</td><td class="cross">—</td><td class="check">✓</td><td class="check">✓</td></tr>
+                <tr><td>Гостевые визиты</td><td>1 / мес</td><td>2 / мес</td><td>Без лимита</td></tr>
+                <tr><td>Заморозка</td><td>14 дней</td><td>30 дней</td><td>45 дней</td></tr>
+                <tr><td>Парковка</td><td class="cross">—</td><td>2 ч бесплатно</td><td>VIP без лимита</td></tr>
+                <tr><td>План питания</td><td class="cross">—</td><td class="cross">—</td><td class="check">✓</td></tr>
+                <tr><td>InBody-анализ</td><td class="cross">—</td><td>1 раз / квартал</td><td>1 раз / месяц</td></tr>
+                <tr><td>Мобильное приложение</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-head section-head--center" data-reveal>
+            <div class="eyebrow">FAQ</div>
+            <h2>ЧАСТЫЕ ВОПРОСЫ</h2>
+            <p>Ответы на популярные вопросы об абонементах FitZone.</p>
+            <div class="section-head__line"></div>
+          </div>
+          <div class="faq" data-reveal>
+            <article class="faq-item">
+              <button class="faq-item__q" type="button">Можно ли заморозить абонемент?</button>
+              <div class="faq-item__a">Да. START — до 14 дней, PRO — до 30 дней, ELITE — до 45 дней в год. Заморозка оформляется через приложение или на ресепшене за 24 часа до начала.</div>
+            </article>
+            <article class="faq-item">
+              <button class="faq-item__q" type="button">Есть ли пробный визит?</button>
+              <div class="faq-item__a">Первый визит — бесплатно. Экскурсия по залу, консультация тренера и рекомендация по абонементу. Запись через сайт или по телефону +7 (495) 555-00-11.</div>
+            </article>
+            <article class="faq-item">
+              <button class="faq-item__q" type="button">Как работает семейная скидка?</button>
+              <div class="faq-item__a">При оформлении двух и более абонементов на одну семью — скидка 15% на каждый тариф. Действует при единовременной оплате за 3+ месяца.</div>
+            </article>
+            <article class="faq-item">
+              <button class="faq-item__q" type="button">Можно ли сменить тариф?</button>
+              <div class="faq-item__a">Да, апгрейд возможен в любой момент — доплата пропорциональна оставшимся дням. Даунгрейд — с начала следующего расчётного периода.</div>
+            </article>
+            <article class="faq-item">
+              <button class="faq-item__q" type="button">Что входит в PT-сессию?</button>
+              <div class="faq-item__a">Персональная тренировка 45 минут с сертифицированным тренером: программа, техника, контроль нагрузки. Входит в PRO (2 шт.) и ELITE (8 шт.) в месяц.</div>
+            </article>
+            <article class="faq-item">
+              <button class="faq-item__q" type="button">Какие способы оплаты принимаете?</button>
+              <div class="faq-item__a">Банковские карты, СБП, Apple Pay и Google Pay. Оплата на сайте или в клубе. Рассрочка 0% на 3 месяца для тарифов PRO и ELITE.</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="cta-band">
+        <div class="container" data-reveal>
+          <h2>НЕ УВЕРЕН В ВЫБОРЕ?</h2>
+          <p>Приходи на бесплатный пробный визит — поможем подобрать тариф под твои цели.</p>
+          <a href="index.html" class="btn btn--lime">Записаться на визит</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a href="index.html" class="logo">FIT<span>ZONE</span></a>
+            <p>Премиальный фитнес-клуб нового поколения. 5000 м² оборудования, групповых классов и recovery-зоны.</p>
+            <div class="footer__social">
+              <a href="#" aria-label="Telegram">TG</a>
+              <a href="#" aria-label="VK">VK</a>
+              <a href="#" aria-label="Instagram">IG</a>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4>НАВИГАЦИЯ</h4>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="memberships.html">Абонементы</a></li>
+              <li><a href="schedule.html">Расписание</a></li>
+              <li><a href="trainers.html">Тренеры</a></li>
+              <li><a href="gallery.html">Галерея</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>УСЛУГИ</h4>
+            <ul>
+              <li><a href="schedule.html">CrossFit</a></li>
+              <li><a href="schedule.html">Yoga Flow</a></li>
+              <li><a href="schedule.html">HIIT Burn</a></li>
+              <li><a href="schedule.html">Boxing Ring</a></li>
+              <li><a href="memberships.html">Персональные тренировки</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>КОНТАКТЫ</h4>
+            <ul class="footer__contact">
+              <li><strong>Адрес</strong> ул. Спортивная, 1, Москва</li>
+              <li><strong>Телефон</strong> +7 (495) 555-00-11</li>
+              <li><strong>Email</strong> hello@fitzone.ru</li>
+              <li><strong>Режим</strong> 6:00–23:00 / PRO 24/7</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© 2026 FitZone. Все права защищены.</span>
+          <div class="footer__bottom-links">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Договор оферты</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

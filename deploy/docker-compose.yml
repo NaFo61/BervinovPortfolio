@@ -1,0 +1,43 @@
+# На сервере: только этот compose + .env + restart.sh (+ nginx-snippet.conf для host)
+# Образы собираются в CI и пушатся в Docker Hub.
+#
+#   ./restart.sh           — pull + up, БД сохраняется
+#   ./full-restart.sh      — сброс volume с заявками (осторожно)
+
+name: bervinov_showcase
+
+services:
+  api:
+    image: ${DOCKERHUB_USER}/bervinov-showcase-api:${IMAGE_TAG:-latest}
+    pull_policy: always
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - leads_data:/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    networks:
+      - internal
+
+  web:
+    image: ${DOCKERHUB_USER}/bervinov-showcase-web:${IMAGE_TAG:-latest}
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:18000:80"
+    depends_on:
+      api:
+        condition: service_healthy
+    networks:
+      - internal
+
+volumes:
+  leads_data:
+
+networks:
+  internal:
+    driver: bridge

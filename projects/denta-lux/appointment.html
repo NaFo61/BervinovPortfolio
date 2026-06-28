@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Онлайн-запись на приём в стоматологическую клинику ДентаЛюкс. Администратор перезвонит в течение 10 минут." />
+<title>Запись на приём — ДентаЛюкс</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="logo">
+      <span class="logo__icon">+</span>
+      ДентаЛюкс
+    </a>
+    <nav class="nav__links" aria-label="Основная навигация">
+      <a href="index.html">Главная</a>
+      <a href="services.html">Услуги</a>
+      <a href="doctors.html">Врачи</a>
+      <a href="prices.html">Цены</a>
+      <a href="appointment.html">Запись</a>
+    </nav>
+    <a href="appointment.html" class="btn btn--primary nav__cta">Записаться</a>
+    <button class="nav__burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="nav__mobile" aria-label="Мобильная навигация">
+  <a href="index.html">Главная</a>
+  <a href="services.html">Услуги</a>
+  <a href="doctors.html">Врачи</a>
+  <a href="prices.html">Цены</a>
+  <a href="appointment.html">Запись</a>
+  <a href="appointment.html" class="btn btn--primary">Записаться на приём</a>
+</nav>
+
+<main>
+  <div class="page-hero">
+    <div class="container">
+      <nav class="page-hero__breadcrumb" aria-label="Хлебные крошки">
+        <a href="index.html">Главная</a>
+        <span>/</span>
+        <span>Запись</span>
+      </nav>
+      <h1>Запись на приём</h1>
+      <p>Оставьте заявку — администратор свяжется с вами в течение 10 минут и подберёт удобное время.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="form-card" data-reveal>
+        <form id="appointmentForm" class="appointment-form" data-lead-site="denta-lux" data-lead-form="appointment">
+          <h2>Онлайн-заявка</h2>
+          <p>Заполните форму — это займёт не более 2 минут. Все поля обязательны для заполнения.</p>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="patientName">Ваше имя</label>
+              <input type="text" id="patientName" name="name" placeholder="Иван Иванов" required />
+            </div>
+            <div class="form-field">
+              <label for="patientPhone">Телефон</label>
+              <input type="tel" id="patientPhone" name="phone" placeholder="+7 (999) 123-45-67" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="patientService">Услуга</label>
+              <select id="patientService" name="service" required>
+                <option value="">Выберите услугу</option>
+                <option value="consultation">Бесплатная консультация</option>
+                <option value="implant">Имплантация</option>
+                <option value="whitening">Отбеливание</option>
+                <option value="braces">Ортодонтия / брекеты</option>
+                <option value="caries">Лечение кариеса</option>
+                <option value="cleaning">Профессиональная гигиена</option>
+                <option value="crown">Протезирование / коронки</option>
+                <option value="extraction">Удаление зуба</option>
+                <option value="other">Другое</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="patientDoctor">Предпочитаемый врач</label>
+              <select id="patientDoctor" name="doctor">
+                <option value="">Любой свободный</option>
+                <option value="lebedev">Игорь Лебедев</option>
+                <option value="sokolova">Елена Соколова</option>
+                <option value="kim">Андрей Ким</option>
+                <option value="orlova">Мария Орлова</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="patientDate">Желаемая дата</label>
+              <input type="date" id="patientDate" name="date" required />
+            </div>
+            <div class="form-field">
+              <label for="patientTime">Желаемое время</label>
+              <select id="patientTime" name="time" required>
+                <option value="">Выберите время</option>
+                <option value="08:00">08:00 – 10:00</option>
+                <option value="10:00">10:00 – 12:00</option>
+                <option value="12:00">12:00 – 14:00</option>
+                <option value="14:00">14:00 – 16:00</option>
+                <option value="16:00">16:00 – 18:00</option>
+                <option value="18:00">18:00 – 21:00</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="patientComment">Комментарий (необязательно)</label>
+            <textarea id="patientComment" name="comment" placeholder="Опишите симптомы или пожелания к приёму"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg btn--block">Отправить заявку</button>
+        </form>
+
+        <div id="formSuccess" class="form-success">
+          <div class="form-success__icon">✓</div>
+          <h3>Заявка принята!</h3>
+          <p>Спасибо за обращение в клинику ДентаЛюкс. Наш администратор перезвонит вам в течение 10 минут для подтверждения записи.</p>
+          <button type="button" id="resetFormBtn" class="btn btn--outline">Отправить ещё одну заявку</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="info-grid">
+        <article class="info-block" data-reveal>
+          <div class="info-block__icon">📞</div>
+          <h3>Телефон</h3>
+          <p><a href="tel:+74959876543">+7 (495) 987-65-43</a><br/>Ежедневно с 8:00 до 21:00</p>
+        </article>
+        <article class="info-block" data-reveal data-reveal-delay="1">
+          <div class="info-block__icon">📍</div>
+          <h3>Адрес</h3>
+          <p>Москва, ул. Здоровья, 8<br/>5 минут от м. Парк Культуры</p>
+        </article>
+        <article class="info-block" data-reveal data-reveal-delay="2">
+          <div class="info-block__icon">⏱️</div>
+          <h3>Время ответа</h3>
+          <p>Администратор перезванивает<br/>в среднем за 10 минут</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="logo">
+          <span class="logo__icon">+</span>
+          ДентаЛюкс
+        </a>
+        <p>Современная стоматологическая клиника в центре Москвы. Заботимся о здоровье ваших зубов с 2010 года.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="doctors.html">Врачи</a></li>
+          <li><a href="prices.html">Цены</a></li>
+          <li><a href="appointment.html">Запись</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Услуги</h4>
+        <ul>
+          <li><a href="services.html">Имплантация</a></li>
+          <li><a href="services.html">Ортодонтия</a></li>
+          <li><a href="services.html">Отбеливание</a></li>
+          <li><a href="services.html">Протезирование</a></li>
+          <li><a href="prices.html">Калькулятор цен</a></li>
+        </ul>
+      </div>
+      <div class="footer__col footer__contact">
+        <h4>Контакты</h4>
+        <ul>
+          <li><span>📍</span> Москва, ул. Здоровья, 8</li>
+          <li><span>📞</span> <a href="tel:+74959876543">+7 (495) 987-65-43</a></li>
+          <li><span>✉️</span> <a href="mailto:info@dentalux.ru">info@dentalux.ru</a></li>
+          <li><span>🕐</span> Пн–Вс: 8:00 – 21:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 ДентаЛюкс. Все права защищены.</span>
+      <span>Лицензия № ЛО-77-01-012345 · <a href="appointment.html">Онлайн-запись</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

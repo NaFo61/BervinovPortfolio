@@ -1,0 +1,42 @@
+# Локальная разработка и тест перед деплоем.
+#   scripts/build-sites.ps1   (Windows)
+#   scripts/build-sites.sh    (Linux/macOS)
+#   docker compose up --build
+
+name: bervinov_showcase
+
+services:
+  api:
+    build: ./backend
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - leads_data:/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    networks:
+      - internal
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:18000:80"
+    depends_on:
+      api:
+        condition: service_healthy
+    networks:
+      - internal
+
+volumes:
+  leads_data:
+
+networks:
+  internal:
+    driver: bridge

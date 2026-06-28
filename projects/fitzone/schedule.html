@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Расписание групповых занятий FitZone — CrossFit, Yoga, HIIT, Boxing на каждый день недели." />
+  <title>Расписание — FitZone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="nav">
+      <a href="index.html" class="logo">FIT<span>ZONE</span></a>
+      <nav class="nav__links" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="memberships.html">Абонементы</a>
+        <a href="schedule.html">Расписание</a>
+        <a href="trainers.html">Тренеры</a>
+        <a href="gallery.html">Галерея</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="memberships.html" class="btn btn--lime btn--lime--pulse nav__cta">Купить абонемент</a>
+        <button class="nav__burger" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="nav__mobile" aria-label="Мобильная навигация">
+        <a href="index.html">Главная</a>
+        <a href="memberships.html">Абонементы</a>
+        <a href="schedule.html">Расписание</a>
+        <a href="trainers.html">Тренеры</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="memberships.html" class="btn btn--lime">Купить абонемент</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero--page">
+        <div class="hero__bg" style="background-image: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1400&q=80');" aria-hidden="true"></div>
+        <div class="hero__scan" aria-hidden="true"></div>
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__tag">40+ классов · каждую неделю</div>
+            <h1 class="hero__title">РАСПИСАНИЕ</h1>
+            <p class="hero__sub">CrossFit, Yoga, HIIT и Boxing — выбирай направление и записывайся через приложение. Доступно для абонементов PRO и ELITE.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="schedule-tabs" data-reveal role="tablist" aria-label="Дни недели">
+            <button class="schedule-tab is-active" data-day="mon" role="tab" aria-selected="true">Пн</button>
+            <button class="schedule-tab" data-day="tue" role="tab">Вт</button>
+            <button class="schedule-tab" data-day="wed" role="tab">Ср</button>
+            <button class="schedule-tab" data-day="thu" role="tab">Чт</button>
+            <button class="schedule-tab" data-day="fri" role="tab">Пт</button>
+            <button class="schedule-tab" data-day="sat" role="tab">Сб</button>
+            <button class="schedule-tab" data-day="sun" role="tab">Вс</button>
+          </div>
+
+          <div class="schedule-panel is-active" data-day="mon" data-reveal role="tabpanel">
+            <div class="schedule-grid">
+              <article class="class-card"><div class="class-card__time">07:00</div><span class="class-card__type class-card__type--crossfit">CrossFit</span><h3>WOD Morning</h3><p>Зал A · Макс · 60 мин</p></article>
+              <article class="class-card"><div class="class-card__time">09:30</div><span class="class-card__type class-card__type--yoga">Yoga</span><h3>Yoga Flow</h3><p>Studio · Алина · 75 мин</p></article>
+              <article class="class-card"><div class="class-card__time">12:00</div><span class="class-card__type class-card__type--hiit">HIIT</span><h3>HIIT Burn</h3><p>Зал B · Дмитрий · 45 мин</p></article>
+              <article class="class-card"><div class="class-card__time">18:00</div><span class="class-card__type class-card__type--crossfit">CrossFit</span><h3>Strength WOD</h3><p>Зал A · Макс · 60 мин</p></article>
+              <article class="class-card"><div class="class-card__time">19:30</div><span class="class-card__type class-card__type--boxing">Boxing</span><h3>Boxing Basics</h3><p>Ring · Артём · 55 мин</p></article>
+              <article class="class-card"><div class="class-card__time">21:00</div><span class="class-card__type class-card__type--yoga">Yoga</span><h3>Yin Yoga</h3><p>Studio · Алина · 60 мин</p></article>
+            </div>
+          </div>
+
+          <div class="schedule-panel" data-day="tue" role="tabpanel">
+            <div class="schedule-grid">
+              <article class="class-card"><div class="class-card__time">07:30</div><span class="class-card__type class-card__type--hiit">HIIT</span><h3>Tabata Blast</h3><p>Зал B · Елена · 40 мин</p></article>
+              <article class="class-card"><div class="class-card__time">10:00</div><span class="class-card__type class-card__type--crossfit">CrossFit</span><h3>Engine WOD</h3><p>Зал A · Макс · 60 мин</p></article>
+              <article class="class-card"><div class="class-card__time">13:00</div><span class="class-card__type class-card__type--yoga">Yoga</span><h3>Power Yoga</h3><p>Studio · Алина · 60 мин</p></article>
+              <article class="class-card"><div class="class-card__time">17:30</div><span class="class-card__type class-card__type--boxing">Boxing</span><h3>Sparring Tech</h3><p>Ring · Артём · 60 мин</p></article>
+              <article class="class-card"><div class="class-card__time">19:00</div><span class="class-card__type class-card__type--hiit">HIIT</span><h3>Cardio Storm</h3><p>Зал B · Дмитрий · 45 мин</p></article>
+              <article class="class-card"><div class="class-card__time">20:30</div><span class="class-card__type class-card__type--crossfit">CrossFit</span><h3>Metcon Night</h3><p>Зал A · Макс · 55 мин</p></article>
+            </div>
+          </div>
+
+          <div class="schedule-panel" data-day="wed" role="tabpanel">
+            <div class="schedule-grid">
+              <article class="class-card"><div class="class-card__time">07:00</div><span class="class-card__type class-card__type--yoga">Yoga</span><h3>Morning Flow</h3><p>Studio · Алина · 60 мин</p></article>
+              <article class="class-card"><div class="class-card__time">09:00</div><span class="class-card__type class-card__type--crossfit">CrossFit</span><h3>Hero WOD</h3><p>Зал A · Макс · 60 мин</p></article>
+              <article class="class-card"><div class="class-card__time">12:30</div><span class="class-card__type class-card__type--boxing">Boxing</span><h3>Pad Work</h3><p>Ring · Артём · 50 мин</p></article>
+              <article class="class-card"><div class="class-card__time">18:00</div><span class="class-card__type class-card__type--hiit">HIIT</span><h3>Full Body Burn</h3><p>Зал B · Елена · 45 мин</p></article>
+              <article class="class-card"><div class="class-card__time">19:30</div><span class="class-card__type class-card__type--crossfit">CrossFit</span><h3>Olympic Lifting</h3><p>Зал A · Макс · 75 мин</p></article>
+              <article class="class-card"><div class="class-card__time">21:00</div><span class="class-card__type class-card__type--yoga">Yoga</span><h3>Stretch &amp; Recover</h3><p>Studio · Алина · 45 мин</p></article>
+            </div>
+          </div>
+
+          <div class="schedule-panel" data-day="thu" role="tabpanel">
+            <div class="schedule-grid">
+              <article class="class-card"><div class="class-card__time">07:00</div><span class="class-card__type class-card__type--crossfit">CrossFit</span><h3>AMRAP Rush</h3><p>Зал A · Макс · 55 мин</p></article>
+              <article class="class-card"><div class="class-card__time">10:30</div><span class="class-card__type class-card__type--hiit">HIIT</span><h3>Core Crusher</h3><p>Зал B · Дмитрий · 40 мин</p></article>
+              <article class="class-card"><div class="class-card__time">13:00</div><span class="class-card__type class-card__type--yoga">Yoga</span><h3>Vinyasa Flow</h3><p>Studio · Алина · 75 мин</p></article>
+              <article class="class-card"><div class="class-card__time">17:00</div><span class="class-card__type class-card__type--boxing">Boxing</span><h3>Heavy Bag</h3><p>Ring · Артём · 55 мин</p></article>
+              <article class="class-card"><div class="class-card__time">18:30</div><span class="class-card__type class-card__type--crossfit">CrossFit</span><h3>Partner WOD</h3><p>Зал A · Макс · 60 мин</p></article>
+              <article class="class-card"><div class="class-card__time">20:00</div><span class="class-card__type class-card__type--hiit">HIIT</span><h3>Leg Day Burn</h3><p>Зал B · Елена · 45 мин</p></article>
+            </div>
+          </div>
+
+          <div class="schedule-panel" data-day="fri" role="tabpanel">
+            <div class="schedule-grid">
+              <article class="class-card"><div class="class-card__time">07:30</div><span class="class-card__type class-card__type--yoga">Yoga</span><h3>Friday Flow</h3><p>Studio · Алина · 60 мин</p></article>
+              <article class="class-card"><div class="class-card__time">09:00</div><span class="class-card__type class-card__type--hiit">HIIT</span><h3>Friday Fight</h3><p>Зал B · Дмитрий · 45 мин</p></article>
+              <article class="class-card"><div class="class-card__time">12:00</div><span class="class-card__type class-card__type--crossfit">CrossFit</span><h3>Chipper WOD</h3><p>Зал A · Макс · 60 мин</p></article>
+              <article class="class-card"><div class="class-card__time">17:30</div><span class="class-card__type class-card__type--boxing">Boxing</span><h3>Fight Club</h3><p>Ring · Артём · 60 мин</p></article>
+              <article class="class-card"><div class="class-card__time">19:00</div><span class="class-card__type class-card__type--crossfit">CrossFit</span><h3>Friday Night Lights</h3><p>Зал A · Макс · 75 мин</p></article>
+              <article class="class-card"><div class="class-card__time">21:00</div><span class="class-card__type class-card__type--yoga">Yoga</span><h3>Restorative</h3><p>Studio · Алина · 60 мин</p></article>
+            </div>
+          </div>
+
+          <div class="schedule-panel" data-day="sat" role="tabpanel">
+            <div class="schedule-grid">
+              <article class="class-card"><div class="class-card__time">09:00</div><span class="class-card__type class-card__type--crossfit">CrossFit</span><h3>Team WOD</h3><p>Зал A · Макс · 75 мин</p></article>
+              <article class="class-card"><div class="class-card__time">10:30</div><span class="class-card__type class-card__type--yoga">Yoga</span><h3>Weekend Flow</h3><p>Studio · Алина · 75 мин</p></article>
+              <article class="class-card"><div class="class-card__time">12:00</div><span class="class-card__type class-card__type--boxing">Boxing</span><h3>Open Ring</h3><p>Ring · Артём · 90 мин</p></article>
+              <article class="class-card"><div class="class-card__time">14:00</div><span class="class-card__type class-card__type--hiit">HIIT</span><h3>Saturday Sweat</h3><p>Зал B · Елена · 50 мин</p></article>
+              <article class="class-card"><div class="class-card__time">16:00</div><span class="class-card__type class-card__type--crossfit">CrossFit</span><h3>Benchmark WOD</h3><p>Зал A · Макс · 60 мин</p></article>
+            </div>
+          </div>
+
+          <div class="schedule-panel" data-day="sun" role="tabpanel">
+            <div class="schedule-grid">
+              <article class="class-card"><div class="class-card__time">10:00</div><span class="class-card__type class-card__type--yoga">Yoga</span><h3>Sunday Stretch</h3><p>Studio · Алина · 90 мин</p></article>
+              <article class="class-card"><div class="class-card__time">11:30</div><span class="class-card__type class-card__type--hiit">HIIT</span><h3>Recovery HIIT</h3><p>Зал B · Дмитрий · 40 мин</p></article>
+              <article class="class-card"><div class="class-card__time">13:00</div><span class="class-card__type class-card__type--crossfit">CrossFit</span><h3>Light WOD</h3><p>Зал A · Макс · 45 мин</p></article>
+              <article class="class-card"><div class="class-card__time">15:00</div><span class="class-card__type class-card__type--boxing">Boxing</span><h3>Technique Sunday</h3><p>Ring · Артём · 55 мин</p></article>
+            </div>
+          </div>
+
+          <div class="schedule-legend" data-reveal>
+            <span style="--c: var(--lime);"><span style="background: rgba(184,255,0,.3); width:12px; height:12px; border-radius:3px; display:inline-block;"></span> CrossFit</span>
+            <span><span style="background: rgba(100,200,255,.3); width:12px; height:12px; border-radius:3px; display:inline-block;"></span> Yoga</span>
+            <span><span style="background: rgba(255,100,80,.3); width:12px; height:12px; border-radius:3px; display:inline-block;"></span> HIIT</span>
+            <span><span style="background: rgba(255,180,50,.3); width:12px; height:12px; border-radius:3px; display:inline-block;"></span> Boxing</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="cta-band">
+        <div class="container" data-reveal>
+          <h2>ХОЧЕШЬ НА КЛАСС?</h2>
+          <p>Групповые занятия доступны с абонементом PRO и ELITE. Запись — за 2 часа до начала через приложение.</p>
+          <a href="memberships.html" class="btn btn--lime">Выбрать абонемент</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a href="index.html" class="logo">FIT<span>ZONE</span></a>
+            <p>Премиальный фитнес-клуб нового поколения. 5000 м² оборудования, групповых классов и recovery-зоны.</p>
+            <div class="footer__social">
+              <a href="#" aria-label="Telegram">TG</a>
+              <a href="#" aria-label="VK">VK</a>
+              <a href="#" aria-label="Instagram">IG</a>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4>НАВИГАЦИЯ</h4>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="memberships.html">Абонементы</a></li>
+              <li><a href="schedule.html">Расписание</a></li>
+              <li><a href="trainers.html">Тренеры</a></li>
+              <li><a href="gallery.html">Галерея</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>УСЛУГИ</h4>
+            <ul>
+              <li><a href="schedule.html">CrossFit</a></li>
+              <li><a href="schedule.html">Yoga Flow</a></li>
+              <li><a href="schedule.html">HIIT Burn</a></li>
+              <li><a href="schedule.html">Boxing Ring</a></li>
+              <li><a href="memberships.html">Персональные тренировки</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>КОНТАКТЫ</h4>
+            <ul class="footer__contact">
+              <li><strong>Адрес</strong> ул. Спортивная, 1, Москва</li>
+              <li><strong>Телефон</strong> +7 (495) 555-00-11</li>
+              <li><strong>Email</strong> hello@fitzone.ru</li>
+              <li><strong>Режим</strong> 6:00–23:00 / PRO 24/7</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© 2026 FitZone. Все права защищены.</span>
+          <div class="footer__bottom-links">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Договор оферты</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

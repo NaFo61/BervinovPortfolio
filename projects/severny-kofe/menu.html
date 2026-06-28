@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Меню Северный Кофе — напитки, десерты и еда. Single origin, авторские рецепты, свежая выпечка." />
+  <title>Меню — Северный Кофе</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="menu">
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient__grain"></div>
+    <div class="ambient__blob ambient__blob--1"></div>
+    <div class="ambient__blob ambient__blob--2"></div>
+  </div>
+
+  <div class="page">
+    <header class="nav">
+      <a href="index.html" class="logo">
+        <span class="logo__mark" aria-hidden="true">☕</span>
+        Северный Кофе
+      </a>
+      <nav class="nav__links" aria-label="Основная навигация">
+        <a href="index.html" data-nav="home">Главная</a>
+        <a href="locations.html" data-nav="locations">Точки</a>
+        <a href="menu.html" data-nav="menu">Меню</a>
+        <a href="loyalty.html" data-nav="loyalty">Лояльность</a>
+        <a href="about.html" data-nav="about">О нас</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="loyalty.html" class="btn btn--brown nav__cta">Карта гостя</a>
+        <button class="nav__burger" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="nav__mobile" aria-label="Мобильная навигация">
+        <a href="index.html" data-nav="home">Главная</a>
+        <a href="locations.html" data-nav="locations">Точки</a>
+        <a href="menu.html" data-nav="menu">Меню</a>
+        <a href="loyalty.html" data-nav="loyalty">Лояльность</a>
+        <a href="about.html" data-nav="about">О нас</a>
+        <a href="loyalty.html" class="btn btn--brown">Карта гостя</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="wrap">
+        <section class="page-hero" data-reveal>
+          <div class="eyebrow eyebrow--line">Single origin &amp; авторские</div>
+          <h1>Меню</h1>
+          <p>Напитки на зёрнах собственной обжарки, свежая выпечка каждое утро и сезонные блюда от нашей кухни.</p>
+        </section>
+
+        <section class="section" style="padding-top:0;" data-reveal>
+          <div class="menu-tabs">
+            <button class="menu-tab is-active" data-tab="drinks">Напитки</button>
+            <button class="menu-tab" data-tab="desserts">Десерты</button>
+            <button class="menu-tab" data-tab="food">Еда</button>
+          </div>
+
+          <div id="menu-drinks" class="menu-category is-active">
+            <h2 class="menu-category__title">Кофе и напитки</h2>
+            <div class="menu-list">
+              <article class="menu-item">
+                <img class="menu-item__img" src="https://images.unsplash.com/photo-1514434758858-3043f4a6e0b3?w=200&q=80" alt="Эспрессо" width="72" height="72" />
+                <div class="menu-item__info">
+                  <h3>Эспрессо <span class="menu-item__badge">Single origin</span></h3>
+                  <p>Эфиопия Yirgacheffe, норthern light roast</p>
+                </div>
+                <span class="menu-item__price">180 ₽</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item__img" src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=200&q=80" alt="Флэт уайт" width="72" height="72" />
+                <div class="menu-item__info">
+                  <h3>Флэт уайт</h3>
+                  <p>Двойной эспрессо, молоко 3.2%, микропена</p>
+                </div>
+                <span class="menu-item__price">290 ₽</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item__img" src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=200&q=80" alt="Раф северный" width="72" height="72" />
+                <div class="menu-item__info">
+                  <h3>Раф северный</h3>
+                  <p>Сливки, ваниль, кедровый орех — фирменный рецепт</p>
+                </div>
+                <span class="menu-item__price">350 ₽</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item__img" src="https://images.unsplash.com/photo-1514434758858-3043f4a6e0b3?w=200&q=80" alt="Колд брю" width="72" height="72" />
+                <div class="menu-item__info">
+                  <h3>Колд брю</h3>
+                  <p>12 ч extraction, лёд, апельсиновая цедра</p>
+                </div>
+                <span class="menu-item__price">320 ₽</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item__img" src="https://images.unsplash.com/photo-1571934811356-5cc061f6822f?w=200&q=80" alt="Капучино" width="72" height="72" />
+                <div class="menu-item__info">
+                  <h3>Капучино</h3>
+                  <p>Колумбия Huila, классическая пена</p>
+                </div>
+                <span class="menu-item__price">260 ₽</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item__img" src="https://images.unsplash.com/photo-1515823064-d6e0c046caab?w=200&q=80" alt="Мatcha latte" width="72" height="72" />
+                <div class="menu-item__info">
+                  <h3>Мatcha latte</h3>
+                  <p>Японская матча ceremonial grade, овсяное молоко</p>
+                </div>
+                <span class="menu-item__price">340 ₽</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item__img" src="https://images.unsplash.com/photo-1544787219-0f97a2f4fc89?w=200&q=80" alt="Фильтр-кофе" width="72" height="72" />
+                <div class="menu-item__info">
+                  <h3>Фильтр-кофе</h3>
+                  <p>V60, Kenya AA — меняется еженедельно</p>
+                </div>
+                <span class="menu-item__price">270 ₽</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item__img" src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=200&q=80" alt="Какао" width="72" height="72" />
+                <div class="menu-item__info">
+                  <h3>Какао северное</h3>
+                  <p>Бельгийское какао 72%, сливки, зефир</p>
+                </div>
+                <span class="menu-item__price">310 ₽</span>
+              </article>
+            </div>
+          </div>
+
+          <div id="menu-desserts" class="menu-category">
+            <h2 class="menu-category__title">Десерты и выпечка</h2>
+            <div class="menu-list">
+              <article class="menu-item">
+                <img class="menu-item__img" src="https://images.unsplash.com/photo-1558961363-fa8cfc82a351?w=200&q=80" alt="Круассан" width="72" height="72" />
+                <div class="menu-item__info">
+                  <h3>Круассан классический</h3>
+                  <p>Сливочное масло 82%, выпекаем каждое утро</p>
+                </div>
+                <span class="menu-item__price">180 ₽</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item__img" src="https://images.unsplash.com/photo-1509365465982-25a25d471196?w=200&q=80" alt="Канеле" width="72" height="72" />
+                <div class="menu-item__info">
+                  <h3>Канеле</h3>
+                  <p>Борdeaux-style, ром, ваниль</p>
+                </div>
+                <span class="menu-item__price">220 ₽</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item__img" src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=200&q=80" alt="Чизкейк" width="72" height="72" />
+                <div class="menu-item__info">
+                  <h3>Чизкейк северный</h3>
+                  <p>Крем-чиз, клюквенный coulis, печенье oreo</p>
+                </div>
+                <span class="menu-item__price">380 ₽</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item__img" src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=200&q=80" alt="Тирамisu" width="72" height="72" />
+                <div class="menu-item__info">
+                  <h3>Тирамisu</h3>
+                  <p>На нашем эспрессо, mascarpone, какао</p>
+                </div>
+                <span class="menu-item__price">360 ₽</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item__img" src="https://images.unsplash.com/photo-1606313564200-e75d5e304d0c?w=200&q=80" alt="Бrownie" width="72" height="72" />
+                <div class="menu-item__info">
+                  <h3>Brownie с орехами</h3>
+                  <p>Тёмный шоколад 70%, кедровый орех, морская соль</p>
+                </div>
+                <span class="menu-item__price">290 ₽</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item__img" src="https://images.unsplash.com/photo-1587241321921-91a834d82e12?w=200&q=80" alt="Медовик" width="72" height="72" />
+                <div class="menu-item__info">
+                  <h3>Медовик</h3>
+                  <p>Домашний рецепт, сметанный крем</p>
+                </div>
+                <span class="menu-item__price">320 ₽</span>
+              </article>
+            </div>
+          </div>
+
+          <div id="menu-food" class="menu-category">
+            <h2 class="menu-category__title">Еда</h2>
+            <div class="menu-list">
+              <article class="menu-item">
+                <img class="menu-item__img" src="https://images.unsplash.com/photo-1528735602782-2552fd46c207?w=200&q=80" alt="Тост с авокадо" width="72" height="72" />
+                <div class="menu-item__info">
+                  <h3>Тост с авокадо</h3>
+                  <p>Закваска, авокадо, яйцо пашот, микрозелень</p>
+                </div>
+                <span class="menu-item__price">420 ₽</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item__img" src="https://images.unsplash.com/photo-1608039829572-7854f934d8d2?w=200&q=80" alt="Гранола" width="72" height="72" />
+                <div class="menu-item__info">
+                  <h3>Гранола с йогуртом</h3>
+                  <p>Домашняя гранола, гreek yogurt, сезонные ягоды</p>
+                </div>
+                <span class="menu-item__price">390 ₽</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item__img" src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=200&q=80" alt="Сэндвич" width="72" height="72" />
+                <div class="menu-item__info">
+                  <h3>Сэндвич с индейкой</h3>
+                  <p>Чиабатта, индейка, сыр brie, руккола, соус песто</p>
+                </div>
+                <span class="menu-item__price">450 ₽</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item__img" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=200&q=80" alt="Боул" width="72" height="72" />
+                <div class="menu-item__info">
+                  <h3>Poke боул</h3>
+                  <p>Лосось, рис, эдамame, огурец, соус teriyaki</p>
+                </div>
+                <span class="menu-item__price">580 ₽</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item__img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=200&q=80" alt="Пицца" width="72" height="72" />
+                <div class="menu-item__info">
+                  <h3>Пицца bianca</h3>
+                  <p>Моцарella, ricotta, шпинат, чеснок — на дровах</p>
+                </div>
+                <span class="menu-item__price">520 ₽</span>
+              </article>
+              <article class="menu-item">
+                <img class="menu-item__img" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=200&q=80" alt="Салат" width="72" height="72" />
+                <div class="menu-item__info">
+                  <h3>Салат с киноа</h3>
+                  <p>Киноа, запечённая тыква, фета, тыквенные семечки</p>
+                </div>
+                <span class="menu-item__price">410 ₽</span>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="section">
+        <div class="cta-banner" data-reveal>
+          <h2>Каждый 6-й напиток — бесплатно</h2>
+          <p>Покажите карту гостя на кассе и копите баллы с каждой покупкой.</p>
+          <div class="cta-banner__actions">
+            <a href="loyalty.html" class="btn btn--cream">Программа лояльности</a>
+            <a href="locations.html" class="btn btn--outline" style="color:var(--cream); border-color:rgba(245,240,232,0.3);">Найти кофейню</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a href="index.html" class="logo">
+              <span class="logo__mark" aria-hidden="true">☕</span>
+              Северный Кофе
+            </a>
+            <p>Specialty coffee с северным характером. Обжариваем сами, открываем с любовью — с 2018 года.</p>
+          </div>
+          <div class="footer__col">
+            <h4>Навигация</h4>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="locations.html">Точки</a></li>
+              <li><a href="menu.html">Меню</a></li>
+              <li><a href="loyalty.html">Лояльность</a></li>
+              <li><a href="about.html">О нас</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Контакты</h4>
+            <ul>
+              <li><a href="mailto:hello@severny.coffee">hello@severny.coffee</a></li>
+              <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+              <li>ул. Северная, 1, Москва</li>
+              <li>Пн–Вс: 8:00 – 22:00</li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Ещё</h4>
+            <ul>
+              <li><a href="#">Приложение iOS</a></li>
+              <li><a href="#">Приложение Android</a></li>
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">Оптовым клиентам</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© 2026 Северный Кофе · 12 кофеен</span>
+          <div class="footer__social">
+            <a href="#" aria-label="Telegram">TG</a>
+            <a href="#" aria-label="VK">VK</a>
+            <a href="#" aria-label="Instagram">IG</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

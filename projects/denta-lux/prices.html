@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Прайс-лист и калькулятор стоимости услуг стоматологической клиники ДентаЛюкс. Прозрачные цены без скрытых платежей." />
+<title>Цены — ДентаЛюкс</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="logo">
+      <span class="logo__icon">+</span>
+      ДентаЛюкс
+    </a>
+    <nav class="nav__links" aria-label="Основная навигация">
+      <a href="index.html">Главная</a>
+      <a href="services.html">Услуги</a>
+      <a href="doctors.html">Врачи</a>
+      <a href="prices.html">Цены</a>
+      <a href="appointment.html">Запись</a>
+    </nav>
+    <a href="appointment.html" class="btn btn--primary nav__cta">Записаться</a>
+    <button class="nav__burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="nav__mobile" aria-label="Мобильная навигация">
+  <a href="index.html">Главная</a>
+  <a href="services.html">Услуги</a>
+  <a href="doctors.html">Врачи</a>
+  <a href="prices.html">Цены</a>
+  <a href="appointment.html">Запись</a>
+  <a href="appointment.html" class="btn btn--primary">Записаться на приём</a>
+</nav>
+
+<main>
+  <div class="page-hero">
+    <div class="container">
+      <nav class="page-hero__breadcrumb" aria-label="Хлебные крошки">
+        <a href="index.html">Главная</a>
+        <span>/</span>
+        <span>Цены</span>
+      </nav>
+      <h1>Цены и калькулятор</h1>
+      <p>Прозрачный прайс-лист и онлайн-калькулятор для расчёта ориентировочной стоимости лечения.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="calculator" data-reveal>
+        <div class="calculator-panel">
+          <h2>Калькулятор стоимости</h2>
+          <p>Выберите услугу и параметры — получите ориентировочную цену. Точный расчёт на бесплатной консультации.</p>
+          <div class="calculator-form">
+            <div class="form-group">
+              <label for="calcService">Услуга</label>
+              <select id="calcService">
+                <option value="implant">Имплантация (за 1 зуб)</option>
+                <option value="whitening">Отбеливание Zoom 4</option>
+                <option value="braces">Брекет-система</option>
+                <option value="caries">Лечение кариеса</option>
+                <option value="cleaning">Профессиональная гигиена</option>
+                <option value="crown">Коронка из циркония</option>
+                <option value="extraction">Удаление зуба</option>
+                <option value="veneers">Керамический винир</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="calcTeeth">Количество зубов / единиц</label>
+              <input type="number" id="calcTeeth" value="1" min="1" max="32" />
+            </div>
+            <div class="form-group">
+              <label>
+                <input type="checkbox" id="calcImplant" />
+                Установка абатмента и коронки (+15 000 ₽ за зуб)
+              </label>
+            </div>
+            <div class="form-group">
+              <label>
+                <input type="checkbox" id="calcAnesthesia" />
+                Седация / усиленная анестезия (+2 500 ₽)
+              </label>
+            </div>
+            <div class="calculator-result">
+              <div class="calculator-result__label">Итого ориентировочно:</div>
+              <div class="calculator-result__value" id="calcResult">35 000 ₽</div>
+              <div class="calculator-result__note">* Не является публичной офертой. Точная стоимость определяется после осмотра.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="price-table-wrap" data-reveal data-reveal-delay="1">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Услуга</th>
+                <th>Описание</th>
+                <th>Цена</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Консультация</td>
+                <td>Первичный осмотр, диагностика</td>
+                <td class="price-table__price">Бесплатно</td>
+              </tr>
+              <tr>
+                <td>Лечение кариеса</td>
+                <td>Пломба композитная, анестезия</td>
+                <td class="price-table__price">от 4 500 ₽</td>
+              </tr>
+              <tr>
+                <td>Профессиональная гигиена</td>
+                <td>Air Flow, ультразвук, полировка</td>
+                <td class="price-table__price">от 6 500 ₽</td>
+              </tr>
+              <tr>
+                <td>Отбеливание Zoom 4</td>
+                <td>1 сеанс, до 8 тонов</td>
+                <td class="price-table__price">от 18 000 ₽</td>
+              </tr>
+              <tr>
+                <td>Коронка циркониевая</td>
+                <td>Изготовление и установка</td>
+                <td class="price-table__price">от 22 000 ₽</td>
+              </tr>
+              <tr>
+                <td>Керамический винир</td>
+                <td>E-max, 1 зуб</td>
+                <td class="price-table__price">от 28 000 ₽</td>
+              </tr>
+              <tr>
+                <td>Имплантация</td>
+                <td>Имплант + установка</td>
+                <td class="price-table__price">от 35 000 ₽</td>
+              </tr>
+              <tr>
+                <td>Удаление зуба</td>
+                <td>Простое / сложное</td>
+                <td class="price-table__price">от 3 500 ₽</td>
+              </tr>
+              <tr>
+                <td>Брекет-система</td>
+                <td>Металл / керамика, 1 челюсть</td>
+                <td class="price-table__price">от 120 000 ₽</td>
+              </tr>
+              <tr>
+                <td>Invisalign</td>
+                <td>Элайнеры, полный курс</td>
+                <td class="price-table__price">от 250 000 ₽</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="info-grid">
+        <article class="info-block" data-reveal>
+          <div class="info-block__icon">💳</div>
+          <h3>Рассрочка 0%</h3>
+          <p>Оформление на 6–12 месяцев через банки-партнёры без переплат.</p>
+        </article>
+        <article class="info-block" data-reveal data-reveal-delay="1">
+          <div class="info-block__icon">📄</div>
+          <h3>Фиксированная смета</h3>
+          <p>Стоимость фиксируется в договоре до начала лечения — без сюрпризов.</p>
+        </article>
+        <article class="info-block" data-reveal data-reveal-delay="2">
+          <div class="info-block__icon">🎁</div>
+          <h3>Акции и скидки</h3>
+          <p>Скидка 10% на комплексную гигиену при записи через сайт.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" data-reveal>
+      <div class="cta-banner">
+        <div>
+          <h2>Нужен точный расчёт?</h2>
+          <p>Запишитесь на бесплатную консультацию — врач составит план лечения с детальной сметой.</p>
+        </div>
+        <a href="appointment.html" class="btn btn--white btn--lg">Записаться на консультацию</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="logo">
+          <span class="logo__icon">+</span>
+          ДентаЛюкс
+        </a>
+        <p>Современная стоматологическая клиника в центре Москвы. Заботимся о здоровье ваших зубов с 2010 года.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="doctors.html">Врачи</a></li>
+          <li><a href="prices.html">Цены</a></li>
+          <li><a href="appointment.html">Запись</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Услуги</h4>
+        <ul>
+          <li><a href="services.html">Имплантация</a></li>
+          <li><a href="services.html">Ортодонтия</a></li>
+          <li><a href="services.html">Отбеливание</a></li>
+          <li><a href="services.html">Протезирование</a></li>
+          <li><a href="prices.html">Калькулятор цен</a></li>
+        </ul>
+      </div>
+      <div class="footer__col footer__contact">
+        <h4>Контакты</h4>
+        <ul>
+          <li><span>📍</span> Москва, ул. Здоровья, 8</li>
+          <li><span>📞</span> <a href="tel:+74959876543">+7 (495) 987-65-43</a></li>
+          <li><span>✉️</span> <a href="mailto:info@dentalux.ru">info@dentalux.ru</a></li>
+          <li><span>🕐</span> Пн–Вс: 8:00 – 21:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 ДентаЛюкс. Все права защищены.</span>
+      <span>Лицензия № ЛО-77-01-012345 · <a href="appointment.html">Онлайн-запись</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

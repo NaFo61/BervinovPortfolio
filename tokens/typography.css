@@ -1,0 +1,54 @@
+/* ============================================================
+   TYPOGRAPHY — Calsans display (wide tracking) + Geist body
+   Headlines feel engineered, not editorial: positive tracking
+   on massive type. Body is dense, confident, narrow range.
+   ============================================================ */
+
+:root {
+  /* ---- Families ---- */
+  --font-display: 'Space Grotesk', 'Calsans', ui-sans-serif, system-ui, sans-serif;
+  --font-body:    'Geist', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono:    'Geist', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* ---- Weights ---- */
+  --fw-light:    300; /* @kind font */
+  --fw-regular:  400; /* @kind font */
+  --fw-medium:   500; /* @kind font */
+  --fw-semibold: 600; /* @kind font */
+
+  /* ---- Display / heading scale (Calsans, +0.056em tracking) ---- */
+  --text-display:    88px;  --leading-display:    0.96; --tracking-display:    4.9px;
+  --text-heading-lg: 72px;  --leading-heading-lg: 1.0;  --tracking-heading-lg: 4px;
+  --text-heading:    56px;  --leading-heading:    1.1;  --tracking-heading:    3.1px;
+  --text-heading-sm: 32px;  --leading-heading-sm: 1.1;  --tracking-heading-sm: 1.8px;
+  --text-subheading: 20px;  --leading-subheading: 1.5;  --tracking-subheading: -0.34px;
+
+  /* ---- Body / UI scale (Geist) ---- */
+  --text-body:    16px; --leading-body:    1.5;  --tracking-body:    0.27px;
+  --text-body-sm: 14px; --leading-body-sm: 1.44; --tracking-body-sm: 0.25px;
+  --text-caption: 12px; --leading-caption: 1.22; --tracking-caption: 0.5px;
+  --text-micro:   10px; --leading-micro:   1.2;  --tracking-micro:  0.94px; /* uppercase badges */
+}
+
+/* Convenience type classes (used by cards + kits) */
+.t-display    { font-family: var(--font-display); font-weight: var(--fw-light);
+                font-size: var(--text-display); line-height: var(--leading-display);
+                letter-spacing: var(--tracking-display); color: var(--text-primary); }
+.t-heading-lg { font-family: var(--font-display); font-weight: var(--fw-light);
+                font-size: var(--text-heading-lg); line-height: var(--leading-heading-lg);
+                letter-spacing: var(--tracking-heading-lg); color: var(--text-primary); }
+.t-heading    { font-family: var(--font-display); font-weight: var(--fw-light);
+                font-size: var(--text-heading); line-height: var(--leading-heading);
+                letter-spacing: var(--tracking-heading); color: var(--text-primary); }
+.t-heading-sm { font-family: var(--font-display); font-weight: var(--fw-light);
+                font-size: var(--text-heading-sm); line-height: var(--leading-heading-sm);
+                letter-spacing: var(--tracking-heading-sm); color: var(--text-primary); }
+.t-eyebrow    { font-family: var(--font-body); font-weight: var(--fw-medium);
+                font-size: var(--text-caption); line-height: 1; letter-spacing: 0.094em;
+                text-transform: uppercase; color: var(--color-ice-blue); }
+.t-body       { font-family: var(--font-body); font-weight: var(--fw-regular);
+                font-size: var(--text-body); line-height: var(--leading-body);
+                letter-spacing: var(--tracking-body); color: var(--text-secondary); }
+.t-caption    { font-family: var(--font-body); font-weight: var(--fw-regular);
+                font-size: var(--text-caption); line-height: var(--leading-caption);
+                letter-spacing: var(--tracking-caption); color: var(--text-tertiary); }

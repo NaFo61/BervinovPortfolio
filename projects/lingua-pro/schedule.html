@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Расписание уроков LinguaPro — выберите день и забронируйте слот онлайн." />
+<title>Расписание — LinguaPro</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="ambient">
+  <div class="ambient__mesh"></div>
+  <div class="ambient__mesh ambient__mesh--left"></div>
+  <div class="ambient__grid"></div>
+</div>
+
+<div class="wrap">
+  <header class="nav">
+    <a href="index.html" class="logo">Lingua<span>Pro</span></a>
+    <nav class="nav__links">
+      <a href="index.html">Главная</a>
+      <a href="languages.html">Языки</a>
+      <a href="schedule.html">Расписание</a>
+      <a href="teachers.html">Преподаватели</a>
+      <a href="pricing.html">Цены</a>
+    </nav>
+    <div class="nav__actions">
+      <a href="schedule.html" class="btn btn--coral btn--sm">Записаться</a>
+      <button class="nav__toggle" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <nav class="mobile-menu">
+    <a href="index.html">Главная</a>
+    <a href="languages.html">Языки</a>
+    <a href="schedule.html">Расписание</a>
+    <a href="teachers.html">Преподаватели</a>
+    <a href="pricing.html">Цены</a>
+    <a href="schedule.html" class="btn btn--coral btn--block" style="margin-top:12px">Записаться на урок</a>
+  </nav>
+
+  <div class="page-hero">
+    <span class="page-hero__badge">Онлайн-запись</span>
+    <h1>Расписание <em>на неделю</em></h1>
+    <p>Выберите удобный день и время — слоты обновляются в реальном времени. Нажмите на свободный слот, чтобы забронировать урок.</p>
+  </div>
+
+  <section data-reveal>
+    <div class="schedule-week">
+      <button type="button" class="day-tab" data-day="mon">Пн<span>4 слота</span></button>
+      <button type="button" class="day-tab active" data-day="tue">Вт<span>7 слотов</span></button>
+      <button type="button" class="day-tab" data-day="wed">Ср<span>5 слотов</span></button>
+      <button type="button" class="day-tab" data-day="thu">Чт<span>6 слотов</span></button>
+      <button type="button" class="day-tab" data-day="fri">Пт<span>8 слотов</span></button>
+      <button type="button" class="day-tab" data-day="sat">Сб<span>3 слота</span></button>
+      <button type="button" class="day-tab" data-day="sun">Вс<span>2 слота</span></button>
+    </div>
+
+    <div class="schedule-slots" id="slots-panel" data-schedule='{
+      "mon":{"label":"Понедельник, 30 июня","slots":[
+        {"time":"10:00","lang":"English · A2","teacher":"Анна К.","booked":false},
+        {"time":"14:00","lang":"Deutsch · B1","teacher":"Hans W.","booked":false},
+        {"time":"18:00","lang":"Español · B2","teacher":"Carlos M.","booked":true},
+        {"time":"20:00","lang":"Français · A1","teacher":"Sophie L.","booked":false}
+      ]},
+      "tue":{"label":"Вторник, 1 июля","slots":[
+        {"time":"09:00","lang":"English · B2","teacher":"Анна К.","booked":false},
+        {"time":"11:00","lang":"中文 · A1","teacher":"Li Wei","booked":false},
+        {"time":"13:00","lang":"Italiano · B1","teacher":"Marco R.","booked":false},
+        {"time":"15:00","lang":"English · IELTS","teacher":"James P.","booked":false},
+        {"time":"17:00","lang":"Deutsch · A2","teacher":"Hans W.","booked":true},
+        {"time":"19:00","lang":"Español · A2","teacher":"Carlos M.","booked":false},
+        {"time":"21:00","lang":"日本語 · N4","teacher":"Yuki T.","booked":false}
+      ]},
+      "wed":{"label":"Среда, 2 июля","slots":[
+        {"time":"10:00","lang":"Français · C1","teacher":"Sophie L.","booked":false},
+        {"time":"12:00","lang":"English · Business","teacher":"James P.","booked":false},
+        {"time":"16:00","lang":"한국어 · A2","teacher":"Min-jun K.","booked":false},
+        {"time":"18:00","lang":"Deutsch · B2","teacher":"Hans W.","booked":false},
+        {"time":"20:00","lang":"Español · C1","teacher":"Carlos M.","booked":true}
+      ]},
+      "thu":{"label":"Четверг, 3 июля","slots":[
+        {"time":"09:00","lang":"English · A1","teacher":"Анна К.","booked":false},
+        {"time":"11:00","lang":"Italiano · A2","teacher":"Marco R.","booked":false},
+        {"time":"14:00","lang":"中文 · B1","teacher":"Li Wei","booked":false},
+        {"time":"16:00","lang":"Français · B2","teacher":"Sophie L.","booked":false},
+        {"time":"18:00","lang":"English · C1","teacher":"James P.","booked":false},
+        {"time":"20:00","lang":"日本語 · N3","teacher":"Yuki T.","booked":false}
+      ]},
+      "fri":{"label":"Пятница, 4 июля","slots":[
+        {"time":"08:00","lang":"English · B1","teacher":"James P.","booked":false},
+        {"time":"10:00","lang":"Deutsch · A1","teacher":"Hans W.","booked":false},
+        {"time":"12:00","lang":"Español · B1","teacher":"Carlos M.","booked":false},
+        {"time":"14:00","lang":"Français · A2","teacher":"Sophie L.","booked":true},
+        {"time":"16:00","lang":"English · TOEFL","teacher":"Анна К.","booked":false},
+        {"time":"18:00","lang":"Italiano · C1","teacher":"Marco R.","booked":false},
+        {"time":"19:00","lang":"中文 · HSK 4","teacher":"Li Wei","booked":false},
+        {"time":"21:00","lang":"한국어 · B1","teacher":"Min-jun K.","booked":false}
+      ]},
+      "sat":{"label":"Суббота, 5 июля","slots":[
+        {"time":"10:00","lang":"English · Разговорный","teacher":"James P.","booked":false},
+        {"time":"14:00","lang":"Español · Разговорный","teacher":"Carlos M.","booked":false},
+        {"time":"16:00","lang":"Français · Разговорный","teacher":"Sophie L.","booked":true}
+      ]},
+      "sun":{"label":"Воскресенье, 6 июля","slots":[
+        {"time":"11:00","lang":"English · A2","teacher":"Анна К.","booked":false},
+        {"time":"15:00","lang":"Deutsch · B1","teacher":"Hans W.","booked":false}
+      ]}
+    }'>
+      <div class="schedule-slots__head">
+        <div>
+          <h3 class="schedule-slots__title">Вторник, 1 июля</h3>
+          <p class="schedule-slots__count">7 свободных слотов</p>
+        </div>
+        <a href="pricing.html" class="btn btn--ghost btn--sm">Тарифы →</a>
+      </div>
+      <div class="slots-grid"></div>
+    </div>
+  </section>
+
+  <section data-reveal>
+    <div class="section-head">
+      <h2>Как записаться</h2>
+      <p>Три простых шага до вашего первого урока</p>
+    </div>
+    <div class="features">
+      <article class="feature">
+        <div class="feature__icon">1️⃣</div>
+        <h3>Выберите слот</h3>
+        <p>Нажмите на свободное время в расписании — язык, уровень и преподаватель указаны в карточке.</p>
+      </article>
+      <article class="feature">
+        <div class="feature__icon">2️⃣</div>
+        <h3>Подтвердите запись</h3>
+        <p>Вы получите письмо с ссылкой на урок и напоминание за 1 час до начала.</p>
+      </article>
+      <article class="feature">
+        <div class="feature__icon">3️⃣</div>
+        <h3>Приходите на урок</h3>
+        <p>Зайдите в личный кабинет — видеозвонок откроется автоматически за 5 минут до начала.</p>
+      </article>
+    </div>
+  </section>
+
+  <div class="cta" data-reveal>
+    <h2>Первый урок — бесплатно</h2>
+    <p>30 минут с преподавателем: определим уровень и составим план обучения</p>
+    <a href="pricing.html" class="btn btn--coral">Узнать о тарифах</a>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="logo">Lingua<span>Pro</span></a>
+        <p>Онлайн-школа иностранных языков с 2018 года. Учим говорить, а не зубрить правила.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Telegram">✈️</a>
+          <a href="#" aria-label="VK">📘</a>
+          <a href="#" aria-label="YouTube">▶️</a>
+          <a href="#" aria-label="Instagram">📷</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Школа</h4>
+        <ul>
+          <li><a href="languages.html">Языки</a></li>
+          <li><a href="teachers.html">Преподаватели</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="pricing.html">Тарифы</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Поддержка</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Личный кабинет</a></li>
+          <li><a href="mailto:support@linguapro.ru">support@linguapro.ru</a></li>
+          <li><a href="tel:+78001234567">8 800 123-45-67</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Документы</h4>
+        <ul>
+          <li><a href="#">Политика конфиденциальности</a></li>
+          <li><a href="#">Договор оферты</a></li>
+          <li><a href="#">Реквизиты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 LinguaPro. Все права защищены.</span>
+      <span>ООО «ЛингваПро» · ИНН 7701234567 · <a href="mailto:info@linguapro.ru">info@linguapro.ru</a></span>
+    </div>
+  </footer>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+/* ============================================================
+   FONTS — Bervinov / Harness-style "midnight mission control"
+   Display: Calsans  → substitute Space Grotesk (wide-tracked geometric sans)
+   Body/UI: Geist     → Geist is on Google Fonts (exact match)
+   Loaded via Google Fonts CDN (the only permitted external dep).
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');

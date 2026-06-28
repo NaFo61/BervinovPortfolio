@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="О BervinovAcademy — история ментора, методология обучения и статистика школы." />
+  <title>О школе — BervinovAcademy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient__grid"></div>
+    <div class="ambient__mesh"></div>
+  </div>
+
+  <div class="wrap">
+    <header class="nav">
+      <a href="index.html" class="logo">Bervinov<span>Academy</span></a>
+      <nav class="nav__links" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="courses.html">Курсы</a>
+        <a href="pricing.html">Тарифы</a>
+        <a href="about.html">О школе</a>
+        <a href="cabinet.html">Кабинет</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="cabinet.html" class="btn btn--ghost">Войти</a>
+        <a href="pricing.html" class="btn btn--mint btn--mint--pulse nav__cta">Начать обучение</a>
+        <button class="nav__burger" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+      </div>
+      <nav class="nav__mobile" aria-label="Мобильная навигация">
+        <a href="index.html">Главная</a>
+        <a href="courses.html">Курсы</a>
+        <a href="pricing.html">Тарифы</a>
+        <a href="about.html">О школе</a>
+        <a href="cabinet.html">Кабинет</a>
+        <a href="pricing.html" class="btn btn--mint">Начать обучение</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero" data-reveal>
+        <div class="eyebrow eyebrow--line">О школе</div>
+        <h1 class="page-title">Школа, где <em class="title-accent">код</em> — это craft</h1>
+        <p class="lead">BervinovAcademy — не очередной курс «HTML за 2 часа». Это система, которая провела 320+ учеников от нуля до первого коммерческого проекта.</p>
+      </section>
+
+      <section style="padding-top:0" data-reveal>
+        <div class="about-grid">
+          <div>
+            <div class="eyebrow eyebrow--line">Ментор</div>
+            <h2 class="page-title" style="font-size:clamp(28px,3.5vw,40px)">Мирон Бервинов</h2>
+            <p style="margin-bottom:16px;font-size:16px;color:var(--text-dim)">Фронтенд-разработчик и UI-инженер с 8-летним опытом. Работал с продуктовыми командами и как фрилансер — от лендингов до SaaS-платформ.</p>
+            <p style="margin-bottom:16px;font-size:16px;color:var(--text-dim)">В 2022 году запустил BervinovAcademy, потому что устал видеть курсы, где учат «копировать Bootstrap», а не думать как разработчик. Здесь — только практика, ревью и реальные проекты.</p>
+            <p style="font-size:16px;color:var(--text-dim)">«Моя цель — не выдать сертификат, а чтобы вы через 8 недель могли взять заказ на 30 000 ₽ и выполнить его уверенно.»</p>
+            <div class="skill-tags" style="margin-top:28px">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">Design Systems</span>
+              <span class="skill-tag">UI/UX</span>
+              <span class="skill-tag">Фриланс</span>
+            </div>
+          </div>
+          <div class="about-photo">
+            <div class="about-photo__glow"></div>
+            <div class="about-photo__placeholder">
+              <span>MB</span>
+              <span style="font-size:13px;color:var(--muted);font-family:'Outfit',sans-serif">Мирон Бервинов</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section data-reveal>
+        <div class="stats-row" data-reveal-stagger>
+          <div class="stat-card">
+            <b>320+</b>
+            <span>выпускников</span>
+          </div>
+          <div class="stat-card">
+            <b>78%</b>
+            <span>нашли первого клиента</span>
+          </div>
+          <div class="stat-card">
+            <b>4.9</b>
+            <span>средняя оценка курса</span>
+          </div>
+          <div class="stat-card">
+            <b>12</b>
+            <span>потоков проведено</span>
+          </div>
+        </div>
+      </section>
+
+      <section data-reveal>
+        <div class="section-head">
+          <div class="eyebrow eyebrow--line">Методология</div>
+          <h2>Как мы учим</h2>
+          <p>Три принципа, на которых построена каждая программа</p>
+        </div>
+        <div class="methodology" data-reveal-stagger>
+          <article class="method-card">
+            <div class="method-card__step">01</div>
+            <h3>Практика &gt; теория</h3>
+            <p>80% времени — код. Каждый урок заканчивается задачей, которую вы решаете сами. Теория — только то, что нужно для следующего шага.</p>
+          </article>
+          <article class="method-card">
+            <div class="method-card__step">02</div>
+            <h3>Ревью, а не тесты</h3>
+            <p>Ментор смотрит ваш код, оставляет комментарии и записывает видео-разбор. Вы учитесь на реальных ошибках, а не на галочках в тестах.</p>
+          </article>
+          <article class="method-card">
+            <div class="method-card__step">03</div>
+            <h3>Проект = портфолио</h3>
+            <p>Каждый модуль — готовый кейс. К концу курса у вас 4 проекта, которые можно показать заказчику, а не «сертификат в PDF».</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="timeline" data-reveal>
+        <div class="section-head">
+          <div class="eyebrow eyebrow--line">История</div>
+          <h2>Путь BervinovAcademy</h2>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__year">2018</div>
+          <div>
+            <h4>Первые фриланс-проекты</h4>
+            <p>Начал брать заказы на вёрстку и React. Первый коммерческий сайт — лендинг для IT-стартапа за 25 000 ₽.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__year">2020</div>
+          <div>
+            <h4>Mint Design System</h4>
+            <p>Создал собственную UI-библиотеку с dark neon эстетикой. Система используется в 40+ проектах клиентов.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__year">2022</div>
+          <div>
+            <h4>Запуск BervinovAcademy</h4>
+            <p>Первый поток — 12 учеников. 9 из них нашли первого клиента в течение 3 месяцев после выпуска.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__year">2024</div>
+          <div>
+            <h4>320+ выпускников</h4>
+            <p>12 потоков, программа из 32 уроков, три тарифа. Средний чек выпускника на фрилансе — 35 000 ₽ за проект.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__year">2026</div>
+          <div>
+            <h4>Сейчас</h4>
+            <p>Готовим 13-й поток. Добавили модуль по React, обновили UI Kit и расширили программу наставничества.</p>
+          </div>
+        </div>
+      </section>
+
+      <section data-reveal>
+        <div class="testimonials" data-reveal-stagger>
+          <blockquote class="testimonial">
+            <p>«Мирон не просто учит кодить — он учит думать как разработчик. После курса читаю чужой код и понимаю, что происходит.»</p>
+            <cite>Игорь С.<span>выпускник потока #9</span></cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>«Ревью домашек — это отдельный вид магии. Каждый комментарий — конкретный и полезный. Ни одного „молодец, так держать".»</p>
+            <cite>Анна Л.<span>тариф «Профи»</span></cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>«На тарифе „Наставник" Мирон помог закрыть первый заказ на 45 000 ₽. Окупил курс в 3 раза.»</p>
+            <cite>Дмитрий К.<span>тариф «Наставник»</span></cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section data-reveal>
+        <div class="cta-band">
+          <h2>Станьте частью следующего потока</h2>
+          <p>Мест осталось 18 из 40. Старт через 2 недели.</p>
+          <a href="pricing.html" class="btn btn--mint btn--mint--pulse">Записаться на курс</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a href="index.html" class="logo">Bervinov<span>Academy</span></a>
+            <p>Онлайн-школа вёрстки и фронтенда. Практика, ревью кода и путь к первому клиенту.</p>
+          </div>
+          <div class="footer__col">
+            <h4>Навигация</h4>
+            <a href="courses.html">Курсы</a>
+            <a href="pricing.html">Тарифы</a>
+            <a href="about.html">О школе</a>
+            <a href="cabinet.html">Личный кабинет</a>
+          </div>
+          <div class="footer__col">
+            <h4>Контакты</h4>
+            <a href="mailto:hello@bervinov.dev">hello@bervinov.dev</a>
+            <a href="https://t.me/bervinov" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
+          </div>
+          <div class="footer__social">
+            <a href="https://t.me/bervinov" target="_blank" rel="noopener" aria-label="Telegram">TG</a>
+            <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© 2026 BervinovAcademy. Все права защищены.</span>
+          <div class="footer__legal">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Оферта</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

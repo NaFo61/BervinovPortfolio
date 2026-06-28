@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="BervinovAcademy — онлайн-школа вёрстки и фронтенда. От нуля до первого коммерческого сайта за 8 недель." />
+  <title>BervinovAcademy — онлайн-школа вёрстки и фронтенда</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient__grid"></div>
+    <div class="ambient__mesh"></div>
+    <div class="ambient__mesh ambient__mesh--alt"></div>
+  </div>
+
+  <div class="wrap">
+    <header class="nav">
+      <a href="index.html" class="logo">Bervinov<span>Academy</span></a>
+      <nav class="nav__links" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="courses.html">Курсы</a>
+        <a href="pricing.html">Тарифы</a>
+        <a href="about.html">О школе</a>
+        <a href="cabinet.html">Кабинет</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="cabinet.html" class="btn btn--ghost">Войти</a>
+        <a href="pricing.html" class="btn btn--mint btn--mint--pulse nav__cta">Начать обучение</a>
+        <button class="nav__burger" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="nav__mobile" aria-label="Мобильная навигация">
+        <a href="index.html">Главная</a>
+        <a href="courses.html">Курсы</a>
+        <a href="pricing.html">Тарифы</a>
+        <a href="about.html">О школе</a>
+        <a href="cabinet.html">Кабинет</a>
+        <a href="pricing.html" class="btn btn--mint">Начать обучение</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="eyebrow eyebrow--line">Онлайн-школа · вёрстка и дизайн</div>
+          <h1 class="hero__title">Собери свой первый<br /><em class="title-accent">коммерческий сайт</em></h1>
+          <p class="hero__sub lead">Практические курсы по HTML, CSS, React и UI/UX. От нуля до первого клиента за 8 недель — с ревью кода и поддержкой ментора.</p>
+          <div class="hero__actions">
+            <a href="pricing.html" class="btn btn--mint btn--mint--pulse">Выбрать тариф</a>
+            <a href="courses.html" class="btn btn--ghost">Программа курса</a>
+          </div>
+          <div class="hero__stats">
+            <div class="hero__stat"><b>320+</b><span>выпускников</span></div>
+            <div class="hero__stat"><b>8</b><span>недель обучения</span></div>
+            <div class="hero__stat"><b>32</b><span>урока с практикой</span></div>
+          </div>
+          <div class="scroll-hint">
+            <span class="scroll-hint__line"></span>
+            Листай вниз
+          </div>
+        </div>
+
+        <div class="code-editor" data-reveal>
+          <div class="code-editor__bar">
+            <span></span><span></span><span></span>
+            <span class="code-editor__tab">portfolio.jsx</span>
+          </div>
+          <pre><code><span class="c-comment">// Ваш первый коммерческий проект</span>
+<span class="c-keyword">import</span> { Hero, Button } <span class="c-keyword">from</span> <span class="c-string">'@/components'</span>;
+
+<span class="c-keyword">export default function</span> <span class="c-fn">Landing</span>() {
+  <span class="c-keyword">const</span> student = {
+    name: <span class="c-string">'Дарья'</span>,
+    skills: [<span class="c-string">'HTML'</span>, <span class="c-string">'CSS'</span>, <span class="c-string">'React'</span>],
+    hired: <span class="c-keyword">true</span>
+  };
+
+  <span class="c-keyword">return</span> (
+    <span class="c-tag">&lt;section</span> <span class="c-attr">className</span>=<span class="c-string">"hero"</span><span class="c-tag">&gt;</span>
+      <span class="c-tag">&lt;Hero</span> <span class="c-attr">title</span>=<span class="c-string">"Hello, World!"</span> <span class="c-tag">/&gt;</span>
+      <span class="c-tag">&lt;Button</span> <span class="c-attr">variant</span>=<span class="c-string">"mint"</span><span class="c-tag">&gt;</span>
+        Start learning
+      <span class="c-tag">&lt;/Button&gt;</span>
+    <span class="c-tag">&lt;/section&gt;</span>
+  );
+}<span class="cursor"></span></code></pre>
+        </div>
+      </section>
+
+      <section data-reveal>
+        <div class="section-head">
+          <div class="eyebrow eyebrow--line">Программа</div>
+          <h2>Три модуля — один путь к фрилансу</h2>
+          <p>Структурированная программа с домашними заданиями, ревью и живыми созвонами</p>
+        </div>
+        <div class="grid-3" data-reveal-stagger>
+          <article class="card">
+            <div class="card__tag">Модуль 1</div>
+            <h3>HTML &amp; CSS</h3>
+            <p>Flexbox, Grid, адаптив, анимации. Соберёте 3 лендинга с нуля.</p>
+            <div class="card__meta">4 недели · 12 уроков · 6 домашек</div>
+          </article>
+          <article class="card">
+            <div class="card__tag">Модуль 2</div>
+            <h3>React &amp; UI</h3>
+            <p>Компоненты, хуки, design system. Портфолио на React с mint-дизайном.</p>
+            <div class="card__meta">4 недели · 14 уроков · 8 домашек</div>
+          </article>
+          <article class="card">
+            <div class="card__tag">Модуль 3</div>
+            <h3>Фриланс</h3>
+            <p>Бриф, ценообразование, поиск клиентов, сдача проекта и оплата.</p>
+            <div class="card__meta">2 недели · 6 уроков · 3 домашки</div>
+          </article>
+        </div>
+        <p style="text-align:center;margin-top:32px">
+          <a href="courses.html" class="btn btn--ghost">Подробная программа →</a>
+        </p>
+      </section>
+
+      <section data-reveal>
+        <div class="section-head">
+          <div class="eyebrow eyebrow--line">Тарифы</div>
+          <h2>Выберите формат обучения</h2>
+          <p>От самостоятельного прохождения до личного наставничества 1-на-1</p>
+        </div>
+        <div class="pricing-grid" data-reveal-stagger>
+          <article class="price-card">
+            <h3>Старт</h3>
+            <p class="price-card__desc">Самостоятельное обучение</p>
+            <div class="price-card__amount">9 900 ₽</div>
+            <ul class="price-card__features">
+              <li>Записи всех 32 уроков</li>
+              <li>Домашние задания</li>
+              <li>Чат учеников</li>
+            </ul>
+            <a href="pricing.html" class="btn btn--ghost btn--block">Подробнее</a>
+          </article>
+          <article class="price-card price-card--featured">
+            <span class="price-card__label">Популярный</span>
+            <h3>Профи</h3>
+            <p class="price-card__desc">С ревью и поддержкой</p>
+            <div class="price-card__amount">24 900 ₽</div>
+            <ul class="price-card__features">
+              <li>Всё из «Старт»</li>
+              <li>Ревью каждой домашки</li>
+              <li>2 созвона с ментором</li>
+              <li>Сертификат</li>
+            </ul>
+            <a href="pricing.html" class="btn btn--mint btn--block">Подробнее</a>
+          </article>
+          <article class="price-card">
+            <h3>Наставник</h3>
+            <p class="price-card__desc">Личное сопровождение</p>
+            <div class="price-card__amount">59 900 ₽</div>
+            <ul class="price-card__features">
+              <li>Личный ментор 1-на-1</li>
+              <li>Еженедельные созвоны</li>
+              <li>Помощь с первым клиентом</li>
+            </ul>
+            <a href="pricing.html" class="btn btn--ghost btn--block">Подробнее</a>
+          </article>
+        </div>
+      </section>
+
+      <section data-reveal>
+        <div class="section-head">
+          <div class="eyebrow eyebrow--line">Отзывы</div>
+          <h2>Что говорят выпускники</h2>
+        </div>
+        <div class="testimonials" data-reveal-stagger>
+          <blockquote class="testimonial">
+            <p>«После курса собрала первый коммерческий сайт и нашла клиента через Telegram. Объясняет по-человечески, без воды.»</p>
+            <cite>Дарья Минина<span>выпускница, фриланс</span></cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>«За 2 месяца перешёл с нуля на фриланс. Ревью кода — огонь, каждая ошибка разбирается детально.»</p>
+            <cite>Алексей К.<span>фронтенд-разработчик</span></cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>«Mint-дизайн системы на курсе — лучшее, что видел в обучении. Портфолио выглядит как у сеньора.»</p>
+            <cite>Катя Волкова<span>UI-дизайнер</span></cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section data-reveal>
+        <div class="cta-band">
+          <h2>Готовы начать путь в веб-разработку?</h2>
+          <p>Присоединяйтесь к следующему потоку — места ограничены, старт через 2 недели</p>
+          <a href="pricing.html" class="btn btn--mint btn--mint--pulse">Записаться на курс</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a href="index.html" class="logo">Bervinov<span>Academy</span></a>
+            <p>Онлайн-школа вёрстки и фронтенда. Практика, ревью кода и путь к первому клиенту.</p>
+          </div>
+          <div class="footer__col">
+            <h4>Навигация</h4>
+            <a href="courses.html">Курсы</a>
+            <a href="pricing.html">Тарифы</a>
+            <a href="about.html">О школе</a>
+            <a href="cabinet.html">Личный кабинет</a>
+          </div>
+          <div class="footer__col">
+            <h4>Контакты</h4>
+            <a href="mailto:hello@bervinov.dev">hello@bervinov.dev</a>
+            <a href="https://t.me/bervinov" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
+          </div>
+          <div class="footer__social">
+            <a href="https://t.me/bervinov" target="_blank" rel="noopener" aria-label="Telegram">TG</a>
+            <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© 2026 BervinovAcademy. Все права защищены.</span>
+          <div class="footer__legal">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Оферта</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

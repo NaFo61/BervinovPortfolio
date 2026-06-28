@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Программа лояльности Северный Кофе — баллы, уровни, QR-карта гостя. Каждый 6-й напиток бесплатно." />
+  <title>Лояльность — Северный Кофе</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="loyalty">
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient__grain"></div>
+    <div class="ambient__blob ambient__blob--1"></div>
+    <div class="ambient__blob ambient__blob--2"></div>
+  </div>
+
+  <div class="page">
+    <header class="nav">
+      <a href="index.html" class="logo">
+        <span class="logo__mark" aria-hidden="true">☕</span>
+        Северный Кофе
+      </a>
+      <nav class="nav__links" aria-label="Основная навигация">
+        <a href="index.html" data-nav="home">Главная</a>
+        <a href="locations.html" data-nav="locations">Точки</a>
+        <a href="menu.html" data-nav="menu">Меню</a>
+        <a href="loyalty.html" data-nav="loyalty">Лояльность</a>
+        <a href="about.html" data-nav="about">О нас</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="loyalty.html" class="btn btn--brown nav__cta">Карта гостя</a>
+        <button class="nav__burger" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="nav__mobile" aria-label="Мобильная навигация">
+        <a href="index.html" data-nav="home">Главная</a>
+        <a href="locations.html" data-nav="locations">Точки</a>
+        <a href="menu.html" data-nav="menu">Меню</a>
+        <a href="loyalty.html" data-nav="loyalty">Лояльность</a>
+        <a href="about.html" data-nav="about">О нас</a>
+        <a href="loyalty.html" class="btn btn--brown">Карта гостя</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="wrap">
+        <section class="page-hero" data-reveal>
+          <div class="eyebrow eyebrow--line">Карта гостя</div>
+          <h1>Программа лояльности</h1>
+          <p>Копите баллы за каждую покупку, повышайте уровень и получайте подарки — от бесплатного капучино до экскурсии на обжарку.</p>
+        </section>
+
+        <section class="section" style="padding-top:0;">
+          <div class="loyalty-hero" data-reveal>
+            <div>
+              <h2 style="font-size:clamp(28px,3.5vw,36px); margin-bottom:16px;">Ваша цифровая карта</h2>
+              <p class="lead" style="margin-bottom:24px;">Скачайте приложение «Северный Кофе» или покажите QR-код на кассе. Карта работает во всех 12 кофейнях и не требует пластика.</p>
+              <ul style="display:flex; flex-direction:column; gap:12px; margin-bottom:28px; color:var(--brown-light); font-size:15px;">
+                <li>✓ 10 баллов за каждые потраченные 100 ₽</li>
+                <li>✓ Каждый 6-й напиток — бесплатно</li>
+                <li>✓ Двойные баллы в день рождения</li>
+                <li>✓ Эксклюзивные напитки для Gold и Platinum</li>
+              </ul>
+              <div style="display:flex; flex-wrap:wrap; gap:12px;">
+                <a href="#" class="btn btn--brown">Скачать приложение</a>
+                <a href="#" class="btn btn--outline">Получить QR-код</a>
+              </div>
+            </div>
+            <div class="loyalty-card">
+              <div class="loyalty-card__header">
+                <span class="loyalty-card__brand">Северный Кофе</span>
+                <span class="loyalty-card__tier">Silver</span>
+              </div>
+              <div class="loyalty-card__qr" aria-label="QR-код карты гостя">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="100" height="100" fill="#fff"/>
+                  <rect x="8" y="8" width="28" height="28" fill="#3d2914"/>
+                  <rect x="64" y="8" width="28" height="28" fill="#3d2914"/>
+                  <rect x="8" y="64" width="28" height="28" fill="#3d2914"/>
+                  <rect x="14" y="14" width="16" height="16" fill="#fff"/>
+                  <rect x="70" y="14" width="16" height="16" fill="#fff"/>
+                  <rect x="14" y="70" width="16" height="16" fill="#fff"/>
+                  <rect x="44" y="8" width="8" height="8" fill="#3d2914"/>
+                  <rect x="44" y="24" width="8" height="8" fill="#3d2914"/>
+                  <rect x="44" y="44" width="12" height="12" fill="#3d2914"/>
+                  <rect x="60" y="44" width="8" height="8" fill="#3d2914"/>
+                  <rect x="44" y="60" width="8" height="8" fill="#3d2914"/>
+                  <rect x="60" y="60" width="8" height="8" fill="#3d2914"/>
+                  <rect x="76" y="60" width="8" height="8" fill="#3d2914"/>
+                  <rect x="44" y="76" width="8" height="8" fill="#3d2914"/>
+                  <rect x="60" y="76" width="8" height="8" fill="#3d2914"/>
+                  <rect x="8" y="44" width="8" height="8" fill="#3d2914"/>
+                  <rect x="24" y="44" width="8" height="8" fill="#3d2914"/>
+                  <rect x="76" y="44" width="8" height="8" fill="#3d2914"/>
+                </svg>
+              </div>
+              <div class="loyalty-card__balance">
+                <span>Ваш баланс</span>
+                <b>340</b>
+                <span>баллов · до бесплатного капучино 60</span>
+              </div>
+              <div class="loyalty-card__footer">
+                <span>ID: SK-2847193</span>
+                <span>Действует до 12.2027</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--cream">
+          <div class="section-head" data-reveal>
+            <div class="eyebrow">Как это работает</div>
+            <h2>Четыре простых шага</h2>
+          </div>
+          <div class="steps" data-reveal-stagger>
+            <article class="step">
+              <h3>Регистрация</h3>
+              <p>Скачайте приложение или попросите QR на кассе — регистрация за 30 секунд</p>
+            </article>
+            <article class="step">
+              <h3>Покупка</h3>
+              <p>Покажите QR перед оплатой — баллы начисляются автоматически</p>
+            </article>
+            <article class="step">
+              <h3>Накопление</h3>
+              <p>10 баллов за каждые 100 ₽. 400 баллов = бесплатный напиток до 350 ₽</p>
+            </article>
+            <article class="step">
+              <h3>Награда</h3>
+              <p>Обменивайте баллы на напитки, десерты, зёрна и мерч бренда</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-head" data-reveal>
+            <div class="eyebrow">Система баллов</div>
+            <h2>Копите и тратьте с умом</h2>
+            <p>1 балл = 1 рубль при обмене на награды</p>
+          </div>
+          <div class="points-grid" data-reveal-stagger>
+            <article class="point-card">
+              <div class="point-card__icon" aria-hidden="true">☕</div>
+              <h3>+10 баллов</h3>
+              <p>За каждые 100 ₽ в чеке. Десерты и еда тоже считаются</p>
+            </article>
+            <article class="point-card">
+              <div class="point-card__icon" aria-hidden="true">🎁</div>
+              <h3>6-й бесплатно</h3>
+              <p>Каждый шестой напиток — в подарок, независимо от баллов</p>
+            </article>
+            <article class="point-card">
+              <div class="point-card__icon" aria-hidden="true">🎂</div>
+              <h3>×2 в день рождения</h3>
+              <p>Двойные баллы и бесплатный десерт в течение недели</p>
+            </article>
+            <article class="point-card">
+              <div class="point-card__icon" aria-hidden="true">🫘</div>
+              <h3>400 баллов</h3>
+              <p>Бесплатный напиток на выбор до 350 ₽</p>
+            </article>
+            <article class="point-card">
+              <div class="point-card__icon" aria-hidden="true">🍰</div>
+              <h3>250 баллов</h3>
+              <p>Любой десерт из витрины</p>
+            </article>
+            <article class="point-card">
+              <div class="point-card__icon" aria-hidden="true">🫙</div>
+              <h3>800 баллов</h3>
+              <p>Пачка зёрен 250 г собственной обжарки</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--brown">
+          <div class="section-head" data-reveal>
+            <div class="eyebrow" style="color:var(--sage-light);">Уровни</div>
+            <h2>Растите вместе с нами</h2>
+            <p style="color:rgba(245,240,232,0.75);">Чем больше визитов — тем больше привилегий</p>
+          </div>
+          <div class="tiers" data-reveal-stagger>
+            <article class="tier">
+              <span class="tier__name">Bronze</span>
+              <p class="tier__desc">0 – 2 000 ₽ за год · базовое начисление баллов, 6-й напиток бесплатно</p>
+              <span class="tier__bonus">×1 баллы</span>
+            </article>
+            <article class="tier">
+              <span class="tier__name">Silver</span>
+              <p class="tier__desc">2 000 – 8 000 ₽ · +15% к начислению, приоритетная очередь</p>
+              <span class="tier__bonus">×1.15</span>
+            </article>
+            <article class="tier">
+              <span class="tier__name">Gold</span>
+              <p class="tier__desc">8 000 – 20 000 ₽ · +30%, секретное меню, приглашение на cupping</p>
+              <span class="tier__bonus">×1.30</span>
+            </article>
+            <article class="tier">
+              <span class="tier__name">Platinum</span>
+              <p class="tier__desc">20 000+ ₽ · +50%, экскурсия на обжарку, именной blend</p>
+              <span class="tier__bonus">×1.50</span>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <div class="section">
+        <div class="cta-banner" data-reveal>
+          <h2>Готовы начать?</h2>
+          <p>Загляните в любую из 12 кофеен — бариста поможет активировать карту за минуту.</p>
+          <div class="cta-banner__actions">
+            <a href="locations.html" class="btn btn--cream">Найти кофейню</a>
+            <a href="menu.html" class="btn btn--outline" style="color:var(--cream); border-color:rgba(245,240,232,0.3);">Смотреть меню</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a href="index.html" class="logo">
+              <span class="logo__mark" aria-hidden="true">☕</span>
+              Северный Кофе
+            </a>
+            <p>Specialty coffee с северным характером. Обжариваем сами, открываем с любовью — с 2018 года.</p>
+          </div>
+          <div class="footer__col">
+            <h4>Навигация</h4>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="locations.html">Точки</a></li>
+              <li><a href="menu.html">Меню</a></li>
+              <li><a href="loyalty.html">Лояльность</a></li>
+              <li><a href="about.html">О нас</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Контакты</h4>
+            <ul>
+              <li><a href="mailto:hello@severny.coffee">hello@severny.coffee</a></li>
+              <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+              <li>ул. Северная, 1, Москва</li>
+              <li>Пн–Вс: 8:00 – 22:00</li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Ещё</h4>
+            <ul>
+              <li><a href="#">Приложение iOS</a></li>
+              <li><a href="#">Приложение Android</a></li>
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">Оптовым клиентам</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© 2026 Северный Кофе · 12 кофеен</span>
+          <div class="footer__social">
+            <a href="#" aria-label="Telegram">TG</a>
+            <a href="#" aria-label="VK">VK</a>
+            <a href="#" aria-label="Instagram">IG</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

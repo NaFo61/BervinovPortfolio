@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="12 кофеен Северный Кофе — адреса, часы работы и особенности каждой точки." />
+  <title>Точки — Северный Кофе</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="locations">
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient__grain"></div>
+    <div class="ambient__blob ambient__blob--1"></div>
+    <div class="ambient__blob ambient__blob--2"></div>
+  </div>
+
+  <div class="page">
+    <header class="nav">
+      <a href="index.html" class="logo">
+        <span class="logo__mark" aria-hidden="true">☕</span>
+        Северный Кофе
+      </a>
+      <nav class="nav__links" aria-label="Основная навигация">
+        <a href="index.html" data-nav="home">Главная</a>
+        <a href="locations.html" data-nav="locations">Точки</a>
+        <a href="menu.html" data-nav="menu">Меню</a>
+        <a href="loyalty.html" data-nav="loyalty">Лояльность</a>
+        <a href="about.html" data-nav="about">О нас</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="loyalty.html" class="btn btn--brown nav__cta">Карта гостя</a>
+        <button class="nav__burger" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="nav__mobile" aria-label="Мобильная навигация">
+        <a href="index.html" data-nav="home">Главная</a>
+        <a href="locations.html" data-nav="locations">Точки</a>
+        <a href="menu.html" data-nav="menu">Меню</a>
+        <a href="loyalty.html" data-nav="loyalty">Лояльность</a>
+        <a href="about.html" data-nav="about">О нас</a>
+        <a href="loyalty.html" class="btn btn--brown">Карта гостя</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="wrap">
+        <section class="page-hero" data-reveal>
+          <div class="eyebrow eyebrow--line">12 кофеен</div>
+          <h1>Наши точки</h1>
+          <p>Уютные залы, террасы и take away в каждом районе. Все кофейни работают на зёрнах собственной обжарки.</p>
+        </section>
+
+        <section class="section" style="padding-top:0;">
+          <div class="grid-3" data-reveal-stagger>
+            <article class="loc">
+              <div class="loc__map loc__map--1" aria-hidden="true">📍</div>
+              <div class="loc__body">
+                <h3>Центр · Арбат</h3>
+                <p class="loc__addr">ул. Арбат, 24</p>
+                <p class="loc__hours">🕐 Пн–Вс: 8:00 – 22:00</p>
+                <span class="loc__tag">С террасой</span>
+              </div>
+            </article>
+            <article class="loc">
+              <div class="loc__map loc__map--2" aria-hidden="true">📍</div>
+              <div class="loc__body">
+                <h3>Сокольники</h3>
+                <p class="loc__addr">ул. Матросская, 5</p>
+                <p class="loc__hours">🕐 Пн–Вс: 7:30 – 21:00</p>
+                <span class="loc__tag">Take away</span>
+              </div>
+            </article>
+            <article class="loc">
+              <div class="loc__map loc__map--3" aria-hidden="true">📍</div>
+              <div class="loc__body">
+                <h3>Кунцево</h3>
+                <p class="loc__addr">ул. Молодогвардейская, 12</p>
+                <p class="loc__hours">🕐 Пн–Вс: 8:00 – 23:00</p>
+                <span class="loc__tag">Детская зона</span>
+              </div>
+            </article>
+            <article class="loc">
+              <div class="loc__map loc__map--4" aria-hidden="true">📍</div>
+              <div class="loc__body">
+                <h3>Хамовники</h3>
+                <p class="loc__addr">ул. Усачёва, 7</p>
+                <p class="loc__hours">🕐 Пн–Пт: 7:00 – 22:00 · Сб–Вс: 8:00 – 22:00</p>
+                <span class="loc__tag">У парка</span>
+              </div>
+            </article>
+            <article class="loc">
+              <div class="loc__map loc__map--1" aria-hidden="true">📍</div>
+              <div class="loc__body">
+                <h3>Пресня</h3>
+                <p class="loc__addr">ул. 1905 года, 15</p>
+                <p class="loc__hours">🕐 Пн–Вс: 8:00 – 21:30</p>
+                <span class="loc__tag">Коворкинг</span>
+              </div>
+            </article>
+            <article class="loc">
+              <div class="loc__map loc__map--2" aria-hidden="true">📍</div>
+              <div class="loc__body">
+                <h3>Тверская</h3>
+                <p class="loc__addr">ул. Тверская, 18</p>
+                <p class="loc__hours">🕐 Пн–Вс: 7:30 – 23:00</p>
+                <span class="loc__tag">Центр города</span>
+              </div>
+            </article>
+            <article class="loc">
+              <div class="loc__map loc__map--3" aria-hidden="true">📍</div>
+              <div class="loc__body">
+                <h3>Китай-город</h3>
+                <p class="loc__addr">ул. Маросейка, 3</p>
+                <p class="loc__hours">🕐 Пн–Вс: 8:00 – 22:00</p>
+                <span class="loc__tag">Исторический центр</span>
+              </div>
+            </article>
+            <article class="loc">
+              <div class="loc__map loc__map--4" aria-hidden="true">📍</div>
+              <div class="loc__body">
+                <h3>Измайлово</h3>
+                <p class="loc__addr">ул. Первомайская, 42</p>
+                <p class="loc__hours">🕐 Пн–Вс: 8:00 – 21:00</p>
+                <span class="loc__tag">У метро</span>
+              </div>
+            </article>
+            <article class="loc">
+              <div class="loc__map loc__map--1" aria-hidden="true">📍</div>
+              <div class="loc__body">
+                <h3>Лианозово</h3>
+                <p class="loc__addr">Алтуфьевское ш., 88</p>
+                <p class="loc__hours">🕐 Пн–Вс: 7:00 – 22:00</p>
+                <span class="loc__tag">Раннее открытие</span>
+              </div>
+            </article>
+            <article class="loc">
+              <div class="loc__map loc__map--2" aria-hidden="true">📍</div>
+              <div class="loc__body">
+                <h3>Чертаново</h3>
+                <p class="loc__addr">ул. Кирпичные Калитки, 9</p>
+                <p class="loc__hours">🕐 Пн–Вс: 8:00 – 22:00</p>
+                <span class="loc__tag">Пекарня</span>
+              </div>
+            </article>
+            <article class="loc">
+              <div class="loc__map loc__map--3" aria-hidden="true">📍</div>
+              <div class="loc__body">
+                <h3>Строгино</h3>
+                <p class="loc__addr">ул. Маршала Катукова, 22</p>
+                <p class="loc__hours">🕐 Пн–Вс: 8:00 – 22:30</p>
+                <span class="loc__tag">У набережной</span>
+              </div>
+            </article>
+            <article class="loc">
+              <div class="loc__map loc__map--4" aria-hidden="true">📍</div>
+              <div class="loc__body">
+                <h3>Ленинский</h3>
+                <p class="loc__addr">Ленинский пр., 95</p>
+                <p class="loc__hours">🕐 Пн–Вс: 8:00 – 23:00</p>
+                <span class="loc__tag">Флагман</span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <div class="section">
+        <div class="cta-banner" data-reveal>
+          <h2>Не нашли свою точку?</h2>
+          <p>Мы открываем новые кофейни каждый год. Подпишитесь на рассылку — сообщим о запуске в вашем районе.</p>
+          <div class="cta-banner__actions">
+            <a href="menu.html" class="btn btn--cream">Смотреть меню</a>
+            <a href="loyalty.html" class="btn btn--outline" style="color:var(--cream); border-color:rgba(245,240,232,0.3);">Карта гостя</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a href="index.html" class="logo">
+              <span class="logo__mark" aria-hidden="true">☕</span>
+              Северный Кофе
+            </a>
+            <p>Specialty coffee с северным характером. Обжариваем сами, открываем с любовью — с 2018 года.</p>
+          </div>
+          <div class="footer__col">
+            <h4>Навигация</h4>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="locations.html">Точки</a></li>
+              <li><a href="menu.html">Меню</a></li>
+              <li><a href="loyalty.html">Лояльность</a></li>
+              <li><a href="about.html">О нас</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Контакты</h4>
+            <ul>
+              <li><a href="mailto:hello@severny.coffee">hello@severny.coffee</a></li>
+              <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+              <li>ул. Северная, 1, Москва</li>
+              <li>Пн–Вс: 8:00 – 22:00</li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Ещё</h4>
+            <ul>
+              <li><a href="#">Приложение iOS</a></li>
+              <li><a href="#">Приложение Android</a></li>
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">Оптовым клиентам</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© 2026 Северный Кофе · 12 кофеен</span>
+          <div class="footer__social">
+            <a href="#" aria-label="Telegram">TG</a>
+            <a href="#" aria-label="VK">VK</a>
+            <a href="#" aria-label="Instagram">IG</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

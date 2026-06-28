@@ -1,0 +1,23 @@
+<!-- @dsCard group="Spacing" viewport="700x150" name="Radii & Elevation" subtitle="Pills for controls (800px), 20px cards; elevation = light border, no shadow" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; background: var(--surface-page); font-family: var(--font-body);
+         padding: 24px; display: flex; align-items: center; gap: 20px; }
+  .box { width: 92px; height: 92px; background: var(--surface-card); border: 1px solid var(--border-card);
+         display: flex; align-items: flex-end; padding: 8px; box-sizing: border-box; color: var(--text-tertiary); font-size: 11px; }
+  .pill { width: auto; height: 44px; padding: 0 22px; border-radius: 800px; align-items: center;
+          background: #fff; color: #070707; font-weight: 500; font-size: 14px; border: none; box-shadow: var(--shadow-pill-inset); }
+</style>
+</head>
+<body>
+  <div class="box" style="border-radius:5px">5 · input</div>
+  <div class="box" style="border-radius:16px">16 · nested</div>
+  <div class="box" style="border-radius:20px">20 · card</div>
+  <div class="box" style="border-radius:32px">32 · feature</div>
+  <div class="box pill">800 · pill</div>
+</body>
+</html>

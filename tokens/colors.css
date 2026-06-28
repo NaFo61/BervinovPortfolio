@@ -1,0 +1,61 @@
+/* ============================================================
+   COLORS — Void canvas + phosphor mint accent
+   Base palette + semantic aliases. Color is rationed:
+   ONE accent (mint) per viewport; light hairline borders on dark.
+   ============================================================ */
+
+:root {
+  /* ---- Surfaces (luminance steps up from the void) ---- */
+  --color-void-canvas:   #070707; /* page floor, deepest surface */
+  --color-carbon-plate:  #0d0e12; /* primary card surface */
+  --color-obsidian:      #141418; /* nested cards, code surfaces */
+  --color-iron-edge:     #2e3038; /* hover overlays, raised surfaces */
+  --color-steel-border:  #22222a; /* heavy structural borders */
+
+  /* ---- Neutrals (text + hairlines) ---- */
+  --color-pure-white:    #ffffff; /* primary text, white pill fill */
+  --color-cloud-mist:    #f0f0f0; /* secondary text, soft fills */
+  --color-fog:           #d9dae5; /* card hairline border (light on dark) */
+  --color-ash:           #c8cad0; /* secondary body text */
+  --color-graphite:      #aeaeb7; /* tertiary body text */
+  --color-slate-mute:    #a2a4a9; /* nav borders, inactive nav text */
+  --color-cinder:        #60606c; /* deep muted text, placeholders */
+
+  /* ---- Accents (use sparingly — one per viewport) ---- */
+  --color-phosphor-mint: #70dcd3; /* THE signature glow — featured, prices, CTA */
+  --color-signal-blue:   #0092e4; /* link borders, active link text */
+  --color-ice-blue:      #a6e5f2; /* decorative soft borders, eyebrows */
+  --color-current-blue:  #00ade4; /* active nav, current-page indicator */
+  --color-deep-signal:   #0677d4; /* input focus border */
+  --color-verdant-edge:  #75ae4c; /* supporting green accent / success */
+  --color-steel-iris:    #929dbd; /* cool blue-gray decorative borders */
+
+  /* ---- Mint glow utilities (derived) ---- */
+  --glow-mint-soft:  0 0 0 1px rgba(112, 220, 211, 0.45), 0 0 28px -6px rgba(112, 220, 211, 0.55);
+  --glow-mint-strong: 0 0 0 1px rgba(112, 220, 211, 0.8), 0 0 48px -4px rgba(112, 220, 211, 0.7);
+  --tint-mint-08:   rgba(112, 220, 211, 0.08);
+  --tint-mint-14:   rgba(112, 220, 211, 0.14);
+
+  /* ========================================================
+     SEMANTIC ALIASES
+     ======================================================== */
+  --surface-page:      var(--color-void-canvas);
+  --surface-card:      var(--color-carbon-plate);
+  --surface-raised:    var(--color-obsidian);
+  --surface-hover:     var(--color-iron-edge);
+
+  --text-primary:      var(--color-pure-white);
+  --text-secondary:    var(--color-ash);
+  --text-tertiary:     var(--color-graphite);
+  --text-muted:        var(--color-cinder);
+  --text-accent:       var(--color-phosphor-mint);
+
+  --border-hairline:   rgba(255, 255, 255, 0.08); /* the quiet card edge */
+  --border-card:       var(--color-fog);          /* defined light edge */
+  --border-structural: var(--color-steel-border);
+  --border-accent:     var(--color-phosphor-mint);
+  --border-focus:      var(--color-deep-signal);
+
+  --accent:            var(--color-phosphor-mint);
+  --accent-link:       var(--color-signal-blue);
+}
